@@ -1,0 +1,24 @@
+﻿<Character speciesname="Handyman" humanoid="False" displayname="" group="human" hasinfo="False" husk="False" usehuskappendage="False" needsair="False" needswater="False" canspeak="True" noise="100" visibility="100" blooddecal="blood" bleedparticleair="blooddrop" bleedparticlewater="waterblood" eatingspeed="10" pathfinderpriority="1" hideinsonar="False" sonardisruption="0">
+  <ragdolls folder="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/Ragdolls/" />
+  <animations folder="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/Animations/" />
+  <health vitality="250" doesbleed="False" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="0" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="0" />
+  <ai combatstrength="640" sight="1" hearing="1" aggressionhurt="100" aggressiongreed="10" fleehealththreshold="0" attackwhenprovoked="False" avoidgunfire="True" aggressiveboarding="False" enforceaggressivebehaviorformissions="True" targetouterwalls="True" randomattack="False">
+    <target tag="human" state="Idle" priority="1" reactdistance="0" attackdistance="0" />
+    <target tag="husk" state="Attack" priority="550" reactdistance="450" attackdistance="75" />
+    <target tag="demohusk" state="Attack" priority="540" reactdistance="450" attackdistance="75" />
+    <target tag="huskbomb" state="Escape" priority="500" reactdistance="300" attackdistance="0" />
+    <target tag="weaker" state="Attack" priority="450" reactdistance="400" attackdistance="150" />
+    <target tag="stronger" state="Escape" priority="460" reactdistance="400" attackdistance="0" />
+    <target tag="sonar" state="PassiveAggressive" priority="0" reactdistance="0" attackdistance="0" />
+  </ai>
+  <inventory slots="Any, Any, RightHand, LeftHand, Head, OuterClothes" accessiblewhenalive="False" commonness="1" />
+  <sound file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_idle01.ogg" state="Idle" range="600" volume="1" gender="None" />
+  <sound file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_idle02.ogg" state="Idle" range="600" volume="1" gender="None" />
+  <sound file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_idle03.ogg" state="Idle" range="600" volume="1" gender="None" />
+  <sound file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_attack01.ogg" state="Attack" range="600" volume="2" gender="None" />
+  <sound file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_attack02.ogg" state="Attack" range="600" volume="2" gender="None" />
+  <sound file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_attack03.ogg" state="Attack" range="600" volume="2" gender="None" />
+  <sound file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_damage01.ogg" state="Damage" range="600" volume="2" gender="None" />
+  <sound file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_damage02.ogg" state="Damage" range="600" volume="2" gender="None" />
+  <sound file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_damage03.ogg" state="Damage" range="600" volume="2" gender="None" />
+</Character>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ItemAssembly name="Protected pipe transporter" description="" hideinmenus="false">
+  <Item name="Secure Pneumatic Post Tray" identifier="posttray_secure" ID="11" rect="-128,32,68,64" linked="10" hiddeningame="False" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="pipepost" displaysidebysidewhenlinked="True" spritedepth="0.5">
+    <ItemContainer pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgInteractSelect" contained="0">
+      <requireditem identifiers="idcard" type="Picked" optional="false" ignoreineditor="false" msg="MsgUnauthorizedAccess" />
+    </ItemContainer>
+  </Item>
+  <Item name="Secure Pneumatic Post Tray" identifier="posttray_secure" ID="10" rect="32,32,68,64" linked="11" hiddeningame="False" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="pipepost" displaysidebysidewhenlinked="True" spritedepth="0.5">
+    <ItemContainer pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgInteractSelect" contained="0">
+      <requireditem identifiers="idcard" type="Picked" optional="false" ignoreineditor="false" msg="MsgUnauthorizedAccess" />
+    </ItemContainer>
+  </Item>
+</ItemAssembly>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ItemAssembly name="Peer-to-peer pipe transporter" description="" hideinmenus="false">
+  <Item name="Pneumatic Post Tray" identifier="posttray" ID="9" rect="32,32,68,64" linked="8" hiddeningame="False" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="pipepost" displaysidebysidewhenlinked="True" spritedepth="0.5">
+    <ItemContainer pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgInteractSelect" contained="0" />
+  </Item>
+  <Item name="Pneumatic Post Tray" identifier="posttray" ID="8" rect="-128,32,68,64" linked="9" hiddeningame="False" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="pipepost" displaysidebysidewhenlinked="True" spritedepth="0.5">
+    <ItemContainer pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgInteractSelect" contained="0" />
+  </Item>
+</ItemAssembly>

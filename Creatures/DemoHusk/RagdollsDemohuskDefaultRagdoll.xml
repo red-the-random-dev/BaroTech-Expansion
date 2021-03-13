@@ -1,0 +1,6 @@
+﻿<Ragdoll type="Dummy" spritesheetorientation="0" limbscale="1" jointscale="1" texturescale="1" colliderheightfromfloor="45" impacttolerance="50" canentersubmarine="True" draggable="True">
+  <collider radius="1" />
+  <limb id="0" type="Head" width="1" height="1">
+    <sprite sourcerect="0, 0, 1, 1" />
+  </limb>
+</Ragdoll>

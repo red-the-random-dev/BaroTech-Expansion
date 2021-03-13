@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ItemAssembly name="Common access cabinet" description="" hideinmenus="false">
+  <Item name="Pneumatic Post Tray" identifier="posttray" ID="12" rect="-144,64,68,64" linked="13" hiddeningame="False" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="pipepost" displaysidebysidewhenlinked="False" spritedepth="0.5">
+    <ItemContainer pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgInteractSelect" contained="0" />
+  </Item>
+  <Item name="Pneumatic Post Tray" identifier="posttray" ID="11" rect="-144,-16,68,64" linked="13" hiddeningame="False" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="pipepost" displaysidebysidewhenlinked="False" spritedepth="0.5">
+    <ItemContainer pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgInteractSelect" contained="0" />
+  </Item>
+  <Item name="Large Pneumatic Post Cabinet" identifier="steelpostcabinet" ID="13" rect="-64,80,225,185" linked="12,11" hiddeningame="False" scale="0.5" spritecolor="255,255,255,255" inventoryiconcolor="255,255,255,255" containercolor="255,255,255,255" condition="100" tags="cabinet,pipepost" displaysidebysidewhenlinked="True" spritedepth="0.84">
+    <ItemContainer pickingtime="0" canbepicked="False" allowingameediting="True" msg="ItemMsgInteractSelect" contained="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" />
+  </Item>
+</ItemAssembly>

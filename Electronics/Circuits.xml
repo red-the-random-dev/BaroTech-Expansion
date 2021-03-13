@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+  <Item name="" identifier="psc" category="Electrical" Tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Price locationtype="Research" buyprice="50" />
+    <Price locationtype="City" buyprice="60" />
+    <Price locationtype="Outpost" buyprice="60" />
+    <Price locationtype="Military" buyprice="60" />
+    <Deconstruct time="5">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weldingtable" requiredtime="8">
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="bppsc" mincondition="0.1" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="122,68,36,36" origin="0.5,0.5" />
+    <Body width="36" height="36" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+  </Item>
+   <Item name="" identifier="wetchip" category="Electrical" Tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Price locationtype="Research" buyprice="50" />
+    <Price locationtype="City" buyprice="60" />
+    <Price locationtype="Outpost" buyprice="60" />
+    <Price locationtype="Military" buyprice="60" />
+    <Deconstruct time="5">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weldingtable" requiredtime="8">
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="bpwetchip" mincondition="0.1" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="122,68,36,36" origin="0.5,0.5" />
+    <Body width="36" height="36" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="" identifier="timerchip" category="Electrical" Tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weldingtable" requiredtime="8">
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="bpdetonator" mincondition="0.1" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="122,68,36,36" origin="0.5,0.5" />
+    <Body width="36" height="36" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="" identifier="heatchip" category="Electrical" Tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weldingtable" requiredtime="8">
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="bpdetonator" mincondition="0.1" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="122,68,36,36" origin="0.5,0.5" />
+    <Body width="36" height="36" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="" identifier="lifechip" category="Electrical" Tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weldingtable" requiredtime="8">
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="bpdetonator" mincondition="0.1" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="122,68,36,36" origin="0.5,0.5" />
+    <Body width="36" height="36" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="" identifier="holdchip" category="Electrical" Tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weldingtable" requiredtime="8">
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="bpdetonator" mincondition="0.1" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="122,68,36,36" origin="0.5,0.5" />
+    <Body width="36" height="36" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="" identifier="protectivefuse" category="Electrical" scale="0.75">
+    <Sprite texture="Components.png" sourcerect="0,0,32,32" depth="0.8" origin="0.5,0.5" />
+    <PowerTransfer canbeselected="true" msg="ItemMsgInteractSelect" overloadvoltage="1.6" fireprobability="0.0">
+      <GuiFrame relativesize="0.2,0.15" minsize="350,160" maxsize="420,190" anchor="Center" style="ItemUI" />
+      <StatusEffect type="OnActive" target="This" condition="-9999999.0">
+        <Conditional overload="eq true" />
+        <sound file="Mods/BaroTech Expansion - Unstable/Electronics/FuseClick.ogg" range="800" loop="false" />
+      </StatusEffect>
+    </PowerTransfer>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredSkill identifier="electrical" level="30" />
+      <StatusEffect type="OnFailure" target="Character">
+        <Explosion range="50.0" stun="0" force="2.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+      </StatusEffect>
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <output name="power" displayname="connection.power" />
+    </ConnectionPanel>
+    <Repairable selectkey="Action" header="electricalrepairsheader" deteriorationspeed="0.0" mindeteriorationdelay="120" maxdeteriorationdelay="720" mindeteriorationcondition="0" ShowRepairUIThreshold="50" fixDurationHighSkill="2" fixDurationLowSkill="5" msg="ItemMsgRestore" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,216" anchor="Center" relativeoffset="0.0,0.27" style="ItemUI" />
+      <RequiredSkill identifier="electrical" level="30" />
+      <StatusEffect type="OnFailure" target="Character">
+        <Explosion range="50.0" stun="0" force="2.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+      </StatusEffect>
+      <ParticleEmitter particle="fleshsmoke" particlespersecond="1" scalemin="0.5" scalemax="1" mincondition="15.0" maxcondition="35.0" />
+      <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="15.0" />
+    </Repairable>
+  </Item>
+</Items>

@@ -1,0 +1,15 @@
+﻿<HuskSwimFast
+  movementspeed="2.208222"
+  steertorque="25"
+  headangle="-22.76161"
+  torsoangle="0"
+  legmoveamount="1.585165"
+  handmoveamount="2.851119,-0.3992918"
+  handmoveoffset="0,0"
+  handcyclespeed="11.40448"
+  legcyclelength="4.038099"
+  footangle="-50"
+  footrotatestrength="25"
+  cyclespeed="2.208222"
+  animationtype="SwimFast"
+  handmovestrength="0.5" />

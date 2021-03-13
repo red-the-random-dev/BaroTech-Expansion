@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <HydrogenTank name="" identifier="hydrogentank" category="Equipment,Misc" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light">
+    <Price locationtype="Research" buyprice="75" />
+    <Price locationtype="City" buyprice="75" />
+    <Price locationtype="Military" buyprice="75" />
+    <Price locationtype="Outpost" buyprice="70" />
+    <Deconstruct time="10">
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" displayname="HydrogenTankEmpty" outcondition="0.0">
+      <RequiredItem identifier="aluminium" />
+    </Fabricate>
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="Mods/BaroTech Expansion - Unstable/Equipment/GasTanks.png" sourcerect="0,0,39,110" depth="0.55" origin="0.5,0.5" />
+    <Body width="38" height="109" density="5" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnFire" target="This,Hull" Condition="-0.5" oxygen="-500"/>
+    </Holdable>
+  </HydrogenTank>
+  <Item name="" identifier="deuteriumtank" category="Equipment,Misc" Tags="smallitem,reactorfuel" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light" heath="175">
+    <Price locationtype="Research" buyprice="75" />
+    <Price locationtype="City" buyprice="75" />
+    <Price locationtype="Military" buyprice="75" />
+    <Price locationtype="Outpost" buyprice="70" />
+    <Deconstruct time="10">
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="6">
+      <RequiredSkill identifier="mechanical" level="35" />
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="hydrogentank" mincondition="0.9" usecondition="true" />
+      <RequiredItem identifier="oxygentank" mincondition="0.11" usecondition="true" />
+      <RequiredItem identifier="bpisotope" mincondition="0.1" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="Mods/BaroTech Expansion - Unstable/Equipment/GasTanks.png" sourcerect="39,0,39,110" depth="0.55" origin="0.5,0.5" />
+    <Body width="38" height="109" density="5" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnFire" target="This,Hull" Condition="-0.5" Oxygen="-750" />
+    </Holdable>
+  </Item>
+  <ChloroformTank name="" identifier="chloroformtank" nameidentifier="oxygentank" category="Equipment,Misc" Tags="smallitem,oxygensource,oxygentank" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light" hideinmenus="true">
+    <Deconstruct time="10">
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" displayname="ChloroformTankDisguised">
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="chloroform" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Tools/tools_new.png" sourcerect="356,223,39,110" depth="0.55" origin="0.5,0.5" />
+    <Body width="38" height="109" density="5" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="This" condition="-2.0">
+        <Conditional condition="lt 98" />
+        <Explosion range="20" shockwave="false" sparks="false" flames="false" force="0.1" smoke="false" camerashakeamount="0.0">
+          <Affliction identifier="drowsiness" amount="1.0" />
+        </Explosion>
+      </StatusEffect> 
+    </Holdable>
+  </ChloroformTank>
+  <QuickBlastTank name="" identifier="quickblasttank" nameidentifier="weldingfueltank" category="Equipment" Tags="smallitem,weldingfueltank" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light" hideinmenus="true">
+    <Deconstruct time="10">
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" displayname="QuickBlastTank" requiredtime="5.0">
+      <RequiredItem identifier="weldingfueltank" />
+      <RequiredItem identifier="hydrogentank" mincondition="0.51" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Tools/tools_new.png" sourcerect="395,223,38,109" depth="0.55" />
+    <Body width="39" height="110" density="5" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnFire" target="This" Condition="-100.0" disabledeltatime="true">
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="5000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="5000" />
+        <Explosion range="250.0" structuredamage="15" force="3.0">
+          <Affliction identifier="burn" strength="25" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" Condition="0.0" setvalue="true">
+        <Conditional condition="lt 98" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="5000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris3.ogg" range="5000" />
+        <Explosion range="250.0" structuredamage="15" force="3.0">
+          <Affliction identifier="burn" strength="25" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+    </Holdable>
+  </QuickBlastTank>
+  
+  <ThermiteCanister name="" identifier="thermitecanister" category="Equipment,Misc" Tags="mediumitem" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <Price locationtype="Research" buyprice="140" />
+    <Price locationtype="Military" buyprice="125" />
+    <Deconstruct time="10">
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="15">
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="iron" />
+    </Fabricate>
+    <Sprite texture="Mods/BaroTech Expansion - Unstable/Equipment/ThermiteCanister.png" sourcerect="0,0,64,90" depth="0.55" origin="0.5,0.5" />
+    <Body width="64" height="90" density="15" />
+    <CustomInterface canbeselected="true">
+      <GuiFrame relativesize="0.15,0.15" anchor="BottomRight" relativeoffset="0.5,0" style="ItemUI" />
+      <Button text="Light up">
+        <StatusEffect type="OnUse" targettype="This" IsOn="true" delay="3">
+          <Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
+          <sound file="Content/Items/Tools/FlareIgnite.ogg" range="800.0" />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnFire" target="This" isOn="true" />
+    </Holdable>
+    <LightComponent LightColor="255,0.0,0.0,255" Flicker="0.5" range="600" IsOn="false">
+      <StatusEffect type="OnActive" targettype="This" Condition="-0.01">
+        <Explosion structuredamage="25" itemdamage="10" range="65" flames="false" sparks="false" camerashakeamount="0">
+          <Affliction identifier="burn" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional PhysicsBodyActive="eq true" />
+        <ParticleEmitter particle="flare" particlespersecond="30" />
+        <ParticleEmitter particle="bubbles" particlespersecond="30" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" targettype="This" IsOn="false" />
+      <sound file="Content/Items/Tools/FlareLoop.ogg" type="OnActive" range="800.0" loop="true" />
+    </LightComponent>
+    <AiTarget />
+  </ThermiteCanister>
+</Items>

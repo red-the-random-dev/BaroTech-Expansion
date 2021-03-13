@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Items>
+	<Item identifier="detonatorcrate" scale="0.5" linkable="true" pickdistance="150" tags="rechargeable" impactsoundtag="impact_metal_heavy" category="Equipment">
+		<Sprite texture="DetonatorCrate.png" depth="0.54" sourcerect="0,0,148,84" origin="0.5,0.5" />
+		<Fabricate suitablefabricators="weldingtable" requiredtime="30">
+			<RequiredSkill identifier="weapons" level="35" />
+			<RequiredItem identifier="steel" />
+			<RequiredItem identifier="aluminium" />
+			<RequiredItem identifier="bpdetonator" mincondition="0.1" usecondition="true" />
+		</Fabricate>
+		<Body width="148" height="85" density="10" />
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect">
+			<StatusEffect type="InWater" target="This" Condition="-5">
+				<RequiredItem identifier="wetchip" type="Contained" />
+				<sound file="Content/Items/WarningBeep.ogg" range="1000" loop="true" />
+			</StatusEffect>
+			<StatusEffect type="OnBroken" target="Contained" targetidentifiers="explosive,nitroglycerin">
+				<Use />
+			</StatusEffect>
+			<StatusEffect type="OnFire" target="This" condition="-4">
+				<RequiredItem identifier="heatchip" type="Contained" />
+			</StatusEffect>
+			<StatusEffect type="InWater" target="This" Condition="4">
+				<RequiredItem identifier="heatchip" type="Contained" />
+			</StatusEffect>
+		</Holdable>
+		<Wearable limbtype="Torso" slots="Bag" pickkey="Use">
+			<sprite texture="DetonatorCrateWearing.png" limb="Torso" inheritlimbdepth="true" hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.75,0.5" sourcerect="0,0,164,148" />
+			<StatusEffect type="OnWearing" target="This,Character" Condition="-25">
+				<RequiredItem identifier="lifechip" type="Contained" />
+				<Conditional isDead="true" />
+				<sound file="Content/Items/WarningBeep.ogg" range="1000" loop="true" />
+			</StatusEffect>
+		</Wearable>
+		<ItemContainer capacity="10" canbeselected="false" hideitems="true" showconditionincontainedstateindicator="true">
+			<ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,205,110,19" />
+			<Containable identifiers="explosive,nitroglycerin,wetchip,lifechip,sonarbeacon" />
+			<Containable identifiers="timerchip">
+				<StatusEffect type="OnContaining" target="This" Condition="-5">
+					<sound file="Content/Items/WarningBeep.ogg" range="500" loop="true" />
+				</StatusEffect>
+			</Containable>
+			<Containable identifiers="heatchip">
+				<StatusEffect type="OnContaining" target="This" Condition="-2" />
+				<StatusEffect type="OnContaining" target="This">
+					<Conditional condition="lt 20" />
+					<sound file="Content/Items/WarningBeep.ogg" range="1000" loop="true" />
+				</StatusEffect>
+			</Containable>
+			<Containable identifiers="holdchip">
+				<StatusEffect type="OnContaining" target="This" Condition="-20">
+					<Conditional PhysicsBodyActive="eq true" />
+					<sound file="Content/Items/WarningBeep.ogg" range="1000" loop="true" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+	</Item>
+</Items>
