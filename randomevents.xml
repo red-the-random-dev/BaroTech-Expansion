@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RandomEvents>
+  <!--                               Set 0                                       -->
+  <EventSet minleveldifficulty="10" maxleveldifficulty="30" chooserandom="false">
+    <Commonness commonness="4">
+      <Override leveltype="RidgeBasic" commonness="8" />
+      <Override leveltype="WastesBasic" commonness="4" />
+      <Override leveltype="VoidBasic" commonness="3" />
+      <Override leveltype="ColdCavernsBasic" commonness="8" />
+      <Override leveltype="PlateauBasic" commonness="6" />
+    </Commonness>
+
+    <!-- populate the ruins -->
+    <MonsterEvent characterfile="Mods/BaroTech Expansion - Unstable/Creatures/DemoHusk/Demohusk.xml" minamount="0" maxamount="1" spawntype="ruin" musictype="monster" />
+    <MonsterEvent characterfile="Fractalguardian" minamount="0" maxamount="2" spawntype="ruin" musictype="monster" />
+    <MonsterEvent characterfile="Fractalguardian2" minamount="0" maxamount="2" spawntype="ruin" musictype="monster" />
+
+    <!-- 2 Demohusks after 100 seconds or passing 10% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.10" minmissiontime="100" minintensity="0.0" maxintensity="0.25">
+      <MonsterEvent characterfile="Mods/BaroTech Expansion - Unstable/Creatures/DemoHusk/Demohusk.xml" minamount="2" maxamount="3" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+
+    <!-- 3 Demohusk after 4 minutes or passing 30% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.30" minmissiontime="200" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Mods/BaroTech Expansion - Unstable/Creatures/DemoHusk/Demohusk.xml" minamount="3" maxamount="4" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+
+    <!-- 4 Demohusk after 10 minutes or passing 60% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.40" minmissiontime="600" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Mods/BaroTech Expansion - Unstable/Creatures/DemoHusk/Demohusk.xml" minamount="4" maxamount="4" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+
+    <!-- 0-2 Demohusk after 15 minutes or passing 80% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.8" minmissiontime="1200" minintensity="0.0" maxintensity="0.5">
+      <MonsterEvent characterfile="Mods/BaroTech Expansion - Unstable/Creatures/DemoHusk/Demohusk.xml" minamount="0" maxamount="1" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+    
+    <!-- 0-3 crawlers or 0-3 husks after 300 seconds or passing 10% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.10" minmissiontime="300" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Crawler" minamount="0" maxamount="3" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Husk" minamount="0" maxamount="3" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+
+    <!-- 1-5 crawlers or 1-2 raptors after 7 minutes or passing 30% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.30" minmissiontime="420" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Crawler" minamount="2" maxamount="5" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+    
+    <!-- 1-5 crawlers or 1-2 raptors after 9 minutes or passing 40% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.40" minmissiontime="540" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Crawler" minamount="2" maxamount="5" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+    
+    <!-- 1-5 crawlers or 1-2 raptors after 11 minutes or passing 50% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.50" minmissiontime="660" minintensity="0.0" maxintensity="0.6">
+      <MonsterEvent characterfile="Crawler" minamount="2" maxamount="5" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+    
+    <!-- 1-5 crawlers or 1-2 raptors after 13 minutes or passing 60% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.60" minmissiontime="780" minintensity="0.0" maxintensity="0.5">
+      <MonsterEvent characterfile="Crawler" minamount="2" maxamount="5" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+    
+    <!-- 1-5 crawlers or 1-2 raptors after 15 minutes or passing 70% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.70" minmissiontime="900" minintensity="0.0" maxintensity="0.4">
+      <MonsterEvent characterfile="Crawler" minamount="2" maxamount="5" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+  </EventSet>
+  
+  <!--                               Set 1                                       -->
+  <EventSet minleveldifficulty="25" maxleveldifficulty="50" chooserandom="false">
+    <Commonness commonness="4">
+      <Override leveltype="RidgeBasic" commonness="8" />
+      <Override leveltype="WastesBasic" commonness="4" />
+      <Override leveltype="VoidBasic" commonness="3" />
+      <Override leveltype="ColdCavernsBasic" commonness="8" />
+      <Override leveltype="PlateauBasic" commonness="6" />
+    </Commonness>
+
+    <!-- populate the ruins -->
+    <MonsterEvent characterfile="Mods/BaroTech Expansion - Unstable/Creatures/DemoHusk/Demohusk.xml" minamount="0" maxamount="1" spawntype="ruin" musictype="monster" />
+    <MonsterEvent characterfile="Fractalguardian" minamount="0" maxamount="2" spawntype="ruin" musictype="monster" />
+    <MonsterEvent characterfile="Fractalguardian2" minamount="0" maxamount="2" spawntype="ruin" musictype="monster" />
+
+    <!-- 4 Demohusks after 100 seconds or passing 10% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.10" minmissiontime="100" minintensity="0.0" maxintensity="0.45">
+      <MonsterEvent characterfile="Mods/BaroTech Expansion - Unstable/Creatures/DemoHusk/Demohusk.xml" minamount="4" maxamount="8" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+
+    <!-- 6 Demohusk after 4 minutes or passing 30% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.30" minmissiontime="200" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Mods/BaroTech Expansion - Unstable/Creatures/DemoHusk/Demohusk.xml" minamount="6" maxamount="10" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+
+    <!-- 8 Demohusk after 10 minutes or passing 60% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.40" minmissiontime="600" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Mods/BaroTech Expansion - Unstable/Creatures/DemoHusk/Demohusk.xml" minamount="8" maxamount="12" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+
+    <!-- 1-4 Demohusk after 15 minutes or passing 80% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.8" minmissiontime="1200" minintensity="0.0" maxintensity="0.5">
+      <MonsterEvent characterfile="Mods/BaroTech Expansion - Unstable/Creatures/DemoHusk/Demohusk.xml" minamount="1" maxamount="4" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+    
+    <!-- 0-3 crawlers and 0-3 husks and 0-2 raptors after 300 seconds or passing 20% -->
+    <EventSet chooserandom="false" mindistancetraveled="0.20" minmissiontime="300" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Crawler" minamount="0" maxamount="3" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Husk" minamount="0" maxamount="3" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Mudraptor" minamount="0" maxamount="2" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+  
+    <!-- 3-10 crawlers or 2-8 raptors or a small thresher pack or a hammerhead after passing 40% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.40" minmissiontime="3000" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Crawler" minamount="3" maxamount="10" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="8" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Hammerhead" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
+      <EventSet chooserandom="false">
+        <MonsterEvent characterfile="Tigerthresher" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
+        <MonsterEvent characterfile="Bonethresher" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
+      </EventSet>
+    </EventSet>
+    
+    <!-- spawn moloch and 0-3 crawlers after passing 60% -->
+    <EventSet chooserandom="false" mindistancetraveled="0.60" minmissiontime="3000" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Moloch" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Crawler" minamount="0" maxamount="3" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+    
+    <!-- 3-10 crawlers or 2-8 raptors or a small thresher pack or a hammerhead and a couple of husks after passing 80% -->
+    <EventSet chooserandom="false" mindistancetraveled="0.80" minmissiontime="3000" minintensity="0.0" maxintensity="1.0">
+      <EventSet chooserandom="true">
+        <MonsterEvent characterfile="Husk" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
+      </EventSet>
+      <EventSet chooserandom="true">
+        <MonsterEvent characterfile="Crawler" minamount="3" maxamount="10" spawntype="mainpath" musictype="monster" />
+        <MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="8" spawntype="mainpath" musictype="monster" />
+        <MonsterEvent characterfile="Hammerhead" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
+        <EventSet chooserandom="false">
+          <MonsterEvent characterfile="Tigerthresher" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
+          <MonsterEvent characterfile="Bonethresher" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
+        </EventSet>
+      </EventSet>
+    </EventSet>
+  </EventSet>
+  
+  <!-- Set 2 -->
+  <EventSet minleveldifficulty="28" maxleveldifficulty="40" chooserandom="false" allowatstart="true">
+    <Commonness commonness="5">
+      <Override leveltype="RidgeBasic" commonness="10" />
+      <Override leveltype="WastesBasic" commonness="10" />
+      <Override leveltype="VoidBasic" commonness="10" />
+      <Override leveltype="ColdCavernsBasic" commonness="10" />
+      <Override leveltype="PlateauBasic" commonness="10" />
+    </Commonness>
+    
+    <!-- always spawn a couple of artifacts	 -->
+    <ArtifactEvent itemidentifier="skyholderartifact" />
+    <ArtifactEvent itemidentifier="thermalartifact" />
+    <ArtifactEvent itemidentifier="nasonovartifact" />
+    <ArtifactEvent itemidentifier="faradayartifact" />
+    <ArtifactEvent itemidentifier="psychosisartifact" />
+
+    <!-- populate the ruins -->
+    <EventSet chooserandom="false" allowatstart="true" perruin="true">
+      <MonsterEvent characterfile="Fractalguardian" minamount="1" maxamount="3" spawntype="ruin" musictype="monster" />
+      <MonsterEvent characterfile="Fractalguardian2" minamount="1" maxamount="3" spawntype="ruin" musictype="monster" />
+      <MonsterEvent characterfile="Crawler" minamount="1" maxamount="3" spawntype="ruin" musictype="monster" />
+      <MonsterEvent characterfile="Husk" minamount="1" maxamount="4" spawntype="ruin" musictype="monster" />
+    </EventSet>
+
+    <!-- Populate the wrecks. -->
+    <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
+      <MonsterEvent characterfile="Crawler" minamount="1" maxamount="1" spawntype="wreck" musictype="monster" spawnprobability="0.3" allowonlyonce="false"/>
+      <MonsterEvent characterfile="Crawler" minamount="1" maxamount="1" spawntype="wreck" musictype="monster" spawnprobability="0.3" allowonlyonce="false"/>
+    </EventSet>
+    <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
+      <MonsterEvent characterfile="Handymanstruct" minamount="1" maxamount="2" spawntype="wreck" musictype="monster" spawnprobability="0.2" allowonlyonce="false"/>
+      <MonsterEvent characterfile="Handymanstruct" minamount="1" maxamount="2" spawntype="wreck" musictype="monster" spawnprobability="0.2" allowonlyonce="false"/>
+      <MonsterEvent characterfile="Husk" minamount="1" maxamount="2" spawntype="wreck" musictype="monster" spawnprobability="0.2" allowonlyonce="false"/>
+      <MonsterEvent characterfile="Husk" minamount="1" maxamount="2" spawntype="wreck" musictype="monster" spawnprobability="0.2" allowonlyonce="false"/>
+    </EventSet>
+    <EventSet identifier="wreck" chooserandom="false" allowatstart="true" perwreck="true">
+      <MonsterEvent characterfile="Mudraptor" minamount="1" maxamount="1" spawntype="wreck" musictype="monster" spawnprobability="0.2" allowonlyonce="false"/>
+    </EventSet>
+    
+    <!-- Distance events -->
+    
+    <!-- 1 Handyman after passing 30% -->
+    <EventSet chooserandom="false" mindistancetraveled="0.10" minmissiontime="180" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Handyman" minamount="1" maxamount="1" spawntype="mainpath" />
+    </EventSet>
+    
+    <!-- 1 Handyman after passing 60% -->
+    <EventSet chooserandom="false" mindistancetraveled="0.10" minmissiontime="180" minintensity="0.2" maxintensity="1.0">
+      <MonsterEvent characterfile="Handyman" minamount="1" maxamount="1" spawntype="mainpath" />
+    </EventSet>
+    
+    <!-- 5-8 crawlers or 4-5 mudraptors or a small pack of threshers after passing 10% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.10" minmissiontime="180" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Crawler" minamount="5" maxamount="8" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Mudraptor" minamount="4" maxamount="5" spawntype="mainpath" musictype="monster" scatter="250"/>
+      <EventSet chooserandom="false">
+        <MonsterEvent characterfile="Bonethresher" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
+        <MonsterEvent characterfile="Tigerthresher" minamount="1" maxamount="3" spawntype="mainpath" musictype="monster" />
+      </EventSet>
+    </EventSet>
+    
+    <!-- 5-8 crawlers or 4-5 mudraptors or a small pack of threshers after passing 25% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.25" minmissiontime="10000" minintensity="0.0" maxintensity="0.8">
+      <MonsterEvent characterfile="Crawler" minamount="5" maxamount="8" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Mudraptor" minamount="4" maxamount="5" spawntype="mainpath" musictype="monster" scatter="250"/>
+      <EventSet chooserandom="false">
+        <MonsterEvent characterfile="Bonethresher" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
+        <MonsterEvent characterfile="Tigerthresher" minamount="1" maxamount="3" spawntype="mainpath" musictype="monster" />
+      </EventSet>
+    </EventSet>
+
+    <!-- 4-6 crawlers or 2-3 mudraptors and a moloch or small thresher pack after passing 40% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.40" minmissiontime="10000" minintensity="0.0" maxintensity="0.7">
+      <EventSet chooserandom="false">
+        <MonsterEvent characterfile="Bonethresher" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
+        <MonsterEvent characterfile="Tigerthresher" minamount="1" maxamount="3" spawntype="mainpath" musictype="monster" />
+        <EventSet chooserandom="true">
+          <MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="3" spawntype="mainpath" musictype="monster" />
+          <MonsterEvent characterfile="Crawler" minamount="4" maxamount="6" spawntype="mainpath" musictype="monster" />
+        </EventSet>
+      </EventSet>
+      <EventSet chooserandom="false">
+        <MonsterEvent characterfile="Moloch" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
+        <EventSet chooserandom="true">
+          <MonsterEvent characterfile="Mudraptor" minamount="2" maxamount="3" spawntype="mainpath" musictype="monster" scatter="250" />
+          <MonsterEvent characterfile="Crawler" minamount="4" maxamount="6" spawntype="mainpath" musictype="monster" />
+        </EventSet>
+      </EventSet>
+    </EventSet>
+
+    <!-- a medium thresher pack or 1-2 hammerheads after passing 60% -->    
+    <EventSet chooserandom="true" mindistancetraveled="0.60" minmissiontime="10000" minintensity="0.0" maxintensity="1.0">
+      <EventSet chooserandom="false">
+        <MonsterEvent characterfile="Bonethresher" minamount="2" maxamount="3" spawntype="mainpath" musictype="monster" />
+        <MonsterEvent characterfile="Tigerthresher" minamount="3" maxamount="5" spawntype="mainpath" musictype="monster" />
+      </EventSet>
+      <MonsterEvent characterfile="Hammerhead" minamount="1" maxamount="2" spawntype="mainpath" musictype="monster" />
+    </EventSet>
+
+    <!-- 5-8 crawlers or 4-5 mudraptors or a small thresher pack after passing 80% -->
+    <EventSet chooserandom="true" mindistancetraveled="0.80" minmissiontime="10000" minintensity="0.0" maxintensity="1.0">
+      <MonsterEvent characterfile="Crawler" minamount="5" maxamount="8" spawntype="mainpath" musictype="monster" />
+      <MonsterEvent characterfile="Mudraptor" minamount="4" maxamount="5" spawntype="mainpath" musictype="monster" scatter="250" />
+      <EventSet chooserandom="false">
+        <MonsterEvent characterfile="Bonethresher" minamount="1" maxamount="1" spawntype="mainpath" musictype="monster" />
+        <MonsterEvent characterfile="Tigerthresher" minamount="1" maxamount="3" spawntype="mainpath" musictype="monster" />
+      </EventSet>
+    </EventSet>
+  
+    <!-- Timed events -->
+  </EventSet>
+</RandomEvents>
+
+  

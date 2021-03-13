@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Afflictions>
+  <Affliction
+    name="Drowsiness" 
+    identifier="drowsiness"
+    description="The patient is most likely to experience the lack of sleep - you can tell that by constantly closing eyes."
+    type="poison"
+    isbuff="true"
+    limbspecific="false"
+    indicatorlimb="Head"
+    showiconthreshold="20"
+    maxstrength="100">
+    <Effect minstrength="0" maxstrength="30"
+      strengthchange="-0.5"
+      minspeedmultiplier="1.0"
+      maxspeedmultiplier="0.75"
+      minchromaticaberration="0.0"
+      maxchromaticaberration="1.0"
+      minscreendistort="0.0"
+      maxscreendistort="0.0"
+      minscreenblur="0.0"
+      maxscreenblur="1.0"
+      dialogflag="SleepyLow"/>
+    <Effect minstrength="30" maxstrength="60"
+      strengthchange="-0.5"
+      minspeedmultiplier="0.75"
+      maxspeedmultiplier="0.45"
+      minchromaticaberration="1.0"
+      maxchromaticaberration="2.0"
+      minscreendistort="1.0"
+      maxscreendistort="3.0"
+      minscreenblur="1.0"
+      maxscreenblur="3.0"
+      dialogflag="SleepyMedium">
+      <StatusEffect target="Character" ObstructVision="true" />
+    </Effect>
+    <Effect minstrength="60" maxstrength="100"
+      strengthchange="-1.5"
+      minspeedmultiplier="0.75"
+      maxspeedmultiplier="0.45"
+      minchromaticaberration="2.0"
+      maxchromaticaberration="3.0"
+      minscreendistort="3.0"
+      maxscreendistort="4.0"
+      minscreenblur="3.0"
+      maxscreenblur="4.0">
+      <StatusEffect target="Character" ObstructVision="true">
+        <Affliction identifier="stun" amount="20" />
+        <ReduceAffliction identifier="psychosis" amount="2.5" />
+        <ReduceAffliction identifier="drunk" amount="4" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Mods/BaroTech Expansion - Unstable/AfflictionIcons.png" sourcerect="0,0,128,128" color="0,127,127,255" origin="0,0"/>
+  </Affliction>
+  
+  <Affliction
+    name="Isonanite Mutation"
+    identifier="structinfection"
+    description="Patient is breathing heavily, as if they are trying to throw up with some liquid substance."
+    type="huskinfection"
+    targets="human,handyman"
+    huskedspeciesname="[speciesname]struct"
+    causeofdeathdescription="Mutated by Isonanite Gel"
+    selfcauseofdeathdescription="You have been mutated by Isonanite Gel."
+    limbspecific="false"
+    indicatorlimb="Torso"
+    activationthreshold="0"
+    showiconthreshold="40"    
+    karmachangeonapplied="-1"
+    maxstrength="100"
+    iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
+    <Effect minstrength="0" maxstrength="15"
+      maxvitalitydecrease="0"
+      strengthchange="-0.1"/>
+    <Effect minstrength="15" maxstrength="100"
+      maxvitalitydecrease="0"
+      minscreenblur="0.0"
+      maxscreenblur="4.0"
+      strengthchange="0.3"/>
+    <icon texture="Mods/BaroTech Expansion - Unstable/AfflictionIcons.png" sourcerect="128,0,128,128" color="60,107,195,255" origin="0,0"/>
+  </Affliction>
+</Afflictions>

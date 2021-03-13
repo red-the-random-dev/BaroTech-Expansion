@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+  <Item name="" identifier="paper" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <!-- TODO: adjust prices -->
+    <Price locationtype="Research" buyprice="10" />
+    <Price locationtype="City" buyprice="10" />
+    <Price locationtype="Outpost" buyprice="10" />
+    <Price locationtype="Mine" buyprice="7" />
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="384,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="0,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="14">
+       <RequiredItem identifier="organicfiber" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Incident Report 22-04-44" identifier="doc2244" category="Misc" Tags="smallitem,papers" canbepicked="true" description="A document describing the incident related to salvage of [REDACTED]." cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="448,0,64,64" />
+    <Sprite texture="DocumentInvIcons.png" sourcerect="21,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Body width="21" height="32" density="10" />
+    <Sonar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+      <GuiFrame relativesize="0.2,0.2" anchor="Center" style="ItemUI"/>
+      <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BaroTech Expansion - Unstable/Papers/docIR2244.png" size="0.28,0.28" origin="0.25,0.57"/>
+      <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5"/>
+    </Sonar>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Addendum 22-04-44A" identifier="doc2244A" category="Misc" Tags="smallitem,papers" canbepicked="true" description="A document containing transcription of Hotel-42 communications." cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="448,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="21,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Body width="21" height="32" density="10" />
+    <Sonar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+      <GuiFrame relativesize="0.2,0.2" anchor="Center" style="ItemUI"/>
+      <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BaroTech Expansion - Unstable/Papers/docIR2244A.png" size="0.28,0.28" origin="0.25,0.57"/>
+      <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5"/>
+    </Sonar>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Document about Thermonuclear Reactor" identifier="docfusionreactor" category="Misc" Tags="smallitem,papers" canbepicked="true" description="A document containing extra information about Thermonuclear Reactor." cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="448,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="21,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Body width="21" height="32" density="10" />
+    <Sonar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+      <GuiFrame relativesize="0.2,0.2" anchor="Center" style="ItemUI"/>
+      <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BaroTech Expansion - Unstable/Papers/docFusionReactor.png" size="0.28,0.28" origin="0.25,0.57"/>
+      <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5"/>
+    </Sonar>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Document about BTX-01 'Velocity'" identifier="docBTX01" category="Misc" Tags="smallitem,papers" canbepicked="true" description="A document containing extra information about Velocity-class submarines." cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="448,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="21,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Body width="21" height="32" density="10" />
+    <Sonar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+      <GuiFrame relativesize="0.2,0.2" anchor="Center" style="ItemUI"/>
+      <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BaroTech Expansion - Unstable/Papers/docBTX01.png" size="0.28,0.28" origin="0.25,0.57"/>
+      <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5"/>
+    </Sonar>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Classified emergency protocol" identifier="docBTX01A" category="Misc" Tags="smallitem,papers" canbepicked="true" description="A document containing information about emergency protocol for HazMat crew." cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="448,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="21,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Body width="21" height="32" density="10" />
+    <Sonar range="0" powerconsumption="10" drawhudwhenequipped="true" displaybordersize="0.2">
+      <GuiFrame relativesize="0.2,0.2" anchor="Center" style="ItemUI"/>
+      <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Mods/BaroTech Expansion - Unstable/Papers/docBTX01Emergency.png" size="0.28,0.28" origin="0.25,0.57"/>
+      <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5"/>
+    </Sonar>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Items>

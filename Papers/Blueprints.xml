@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+  <Item name="" identifier="bppsc" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="512,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="42,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="printer" requiredtime="14">
+       <RequiredSkill identifier="electrical" level="30" />
+       <RequiredItem identifier="paper" />
+       <RequiredItem identifier="fpgacircuit" mincondition="0.0" usecondition="true" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" identifier="bpprop" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <!-- TODO: adjust prices -->
+    <Price locationtype="Research" buyprice="10" />
+    <Price locationtype="City" buyprice="10" />
+    <Price locationtype="Outpost" buyprice="10" />
+    <Price locationtype="Mine" buyprice="7" />
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="512,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="42,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="printer" requiredtime="14">
+       <RequiredSkill identifier="mechanical" level="30" />
+       <RequiredItem identifier="paper" />
+       <RequiredItem identifier="underwaterscooterii" mincondition="0.0" usecondition="true" />
+    </Fabricate>
+    <Fabricate suitablefabricators="printer" requiredtime="14" displayname="BPPropCutter" outcondition="0.7">
+       <RequiredSkill identifier="mechanical" level="25" />
+       <RequiredItem identifier="paper" />
+       <RequiredItem identifier="plasmacutter" mincondition="0.0" usecondition="true" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+
+  <Item name="" identifier="bpo2" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <!-- TODO: adjust prices -->
+    <Price locationtype="Research" buyprice="10" />
+    <Price locationtype="City" buyprice="10" />
+    <Price locationtype="Outpost" buyprice="10" />
+    <Price locationtype="Mine" buyprice="7" />
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="512,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="42,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="printer" requiredtime="14">
+       <RequiredSkill identifier="mechanical" level="35" />
+       <RequiredItem identifier="paper" />
+       <RequiredItem identifier="divingmask" mincondition="0.0" usecondition="true" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="" identifier="bpinv" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="512,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="42,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="printer" requiredtime="14">
+       <RequiredSkill identifier="electrical" level="30" />
+       <RequiredItem identifier="paper" />
+       <RequiredItem identifier="toolbox" mincondition="0.0" usecondition="true" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" identifier="bpisotope" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="512,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="42,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="printer" requiredtime="14">
+       <RequiredSkill identifier="electrical" level="30" />
+       <RequiredItem identifier="paper" />
+       <RequiredItem identifier="fuelrod" mincondition="0.0" usecondition="true" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" identifier="bpdetonator" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="512,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="42,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="printer" requiredtime="14">
+       <RequiredSkill identifier="weapons" level="30" />
+       <RequiredItem identifier="paper" />
+       <RequiredItem identifier="detonator" mincondition="0.0" usecondition="true" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" identifier="bpwetchip" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="512,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="42,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="printer" requiredtime="14">
+       <RequiredSkill identifier="electrical" level="30" />
+       <RequiredItem identifier="paper" />
+       <RequiredItem identifier="waterdetector" mincondition="0.0" usecondition="true" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" identifier="bpradio" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="512,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="42,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="printer" requiredtime="14" displayname="BPRadioHeadset" outcondition="0.5">
+       <RequiredSkill identifier="electrical" level="25" />
+       <RequiredItem identifier="paper" />
+       <RequiredItem identifier="headset" mincondition="0.0" usecondition="true" />
+    </Fabricate>
+    <Fabricate suitablefabricators="printer" requiredtime="14">
+       <RequiredSkill identifier="electrical" level="35" />
+       <RequiredItem identifier="paper" />
+       <RequiredItem identifier="wificomponent" mincondition="0.0" usecondition="true" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" identifier="bpalienpower" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="512,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="42,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="printer" requiredtime="14">
+       <RequiredSkill identifier="electrical" level="50" />
+       <RequiredItem identifier="paper" />
+       <RequiredItem identifier="alienpowercell" mincondition="0.0" usecondition="true" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" identifier="bpbfg" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="512,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="42,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="printer" requiredtime="14">
+       <RequiredSkill identifier="electrical" level="50" />
+       <RequiredItem identifier="bpalienpower" mincondition="0.1" usecondition="true" />
+       <RequiredItem identifier="bpprop" mincondition="0.1" usecondition="true" />
+       <RequiredItem identifier="paper" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" identifier="bpnanite" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="512,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="42,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="printer" requiredtime="14">
+       <RequiredSkill identifier="medical" level="35" />
+       <RequiredItem identifier="oxygendetector" mincondition="0.0" usecondition="true" />
+       <RequiredItem identifier="opium" mincondition="0.0" usecondition="true" />
+       <RequiredItem identifier="paper" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item name="" identifier="bpnaniteplus" category="Material" Tags="smallitem,papers" canbepicked="true" cargocontaineridentifier="metalcrate" scale="1.0">
+    <InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" sourcerect="512,0,64,64" />
+    <Sprite texture="DocumentSprites.png" sourcerect="42,0,21,32" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="printer" requiredtime="14">
+       <RequiredSkill identifier="medical" level="35" />
+       <RequiredItem identifier="bpnanite" mincondition="0.0" usecondition="true" />
+       <RequiredItem identifier="stabilozine" mincondition="0.0" usecondition="true" />
+       <RequiredItem identifier="paper" />
+    </Fabricate>
+    <Body width="21" height="32" density="10" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Items>

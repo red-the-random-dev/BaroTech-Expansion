@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+  
+<Items>
+  <Item name="" identifier="syringeammobox" scale="0.5" tags="coilgunequipment,coilgunammo" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
+    <Deconstruct time="10">
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weldingtable" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="25"/>
+      <RequiredItem identifier="aluminium"/>
+    </Fabricate>
+    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+    <Sprite texture="Content/Items/Containers/containers.png" depth="0.54" sourcerect="788,782,117,89" origin="0.5,0.5" />
+    <Body width="115" height="88" density="50" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect"/>
+    <ItemContainer hideitems="true" capacity="6" drawinventory="true" canbeselected="false">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="1,29,120,35" />
+      <Containable identifiers="syringe" />
+    </ItemContainer>
+  </Item>
+  
+  <Item name="" identifier="o2cartridge" scale="0.5" tags="drillequipment,drillammo" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="coilgunammocontainer" minamount="1" maxamount="3"/>
+    <PreferredContainer primary="wreckcoilgun" minamount="0" maxamount="3" spawnprobability="0.33"/>
+    <Deconstruct time="10">
+      <Item identifier="oxygentank" copycondition="true"/>
+      <Item identifier="oxygentank" copycondition="true"/>
+      <Item identifier="oxygentank" copycondition="true"/>
+      <Item identifier="oxygentank" copycondition="true"/>
+      <Item identifier="aluminium"/>
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="25"/>
+      <RequiredItem identifier="oxygentank"/>
+      <RequiredItem identifier="oxygentank"/>
+      <RequiredItem identifier="oxygentank"/>
+      <RequiredItem identifier="oxygentank"/>
+      <RequiredItem identifier="aluminium"/>
+    </Fabricate>
+    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+    <Sprite texture="Mods/BaroTech Expansion - Unstable/Weapons/NewAmmunitionBoxes.png" depth="0.54" sourcerect="0,0,117,89" origin="0.5,0.5" />
+    <Body width="115" height="88" density="50" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect"/>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="2,121,53,22" />
+      <!--  -0.5 per usage = 200 shots per box -->
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="plasmaorb" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true">
+        <RequiredItem items="plasmaorb" type="Contained" />
+      </StatusEffect>
+      <Containable items="plasmaorb" />
+    </ItemContainer>
+  </Item>
+</Items>

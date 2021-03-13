@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<sounds>
+  <footstep_handyman file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_step01.ogg" range="800"/>
+  <footstep_handyman file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_step02.ogg" range="800"/>
+  <footstep_handyman file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_step03.ogg" range="800"/>
+  <footstep_handyman file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_step04.ogg" range="800"/>
+  <footstep_handyman file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/HANDYMAN_step05.ogg" range="800"/>
+  
+  <impact_holygrenade file="Mods/BaroTech Expansion - Unstable/Weapons/HolyGrenade_Impact.ogg"/>
+</sounds>

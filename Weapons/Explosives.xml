@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Items>
+  <Item name="" identifier="explosivenuke" category="Equipment" Tags="smallitem,explosive" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="weldingtable" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="70"/>
+      <RequiredItem identifier="uex"/>
+      <RequiredItem identifier="uranium" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="bpisotope" mincondition="0.1" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="768,64,64,64" />
+    <Sprite texture="Content/Items/Weapons/weapons.png" depth="0.8" sourcerect="103,58,23,16" />
+    <Body width="23" height="16" density="20" />
+    <Throwable characterusable="false" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnUse" range="10000" selectionmode="All" />
+      <sound file="Mods/BaroTech Expansion - Unstable/Weapons/Аннигиляторная пушка.ogg" type="OnUse" range="10000" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0">
+        <Explosion range="700.0" structuredamage="500" stun="5" force="20.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5" empstrength="150">
+          <Affliction identifier="burn" strength="370" />
+          <Affliction identifier="internaldamage" strength="85" />
+          <Affiction identifier="radiationsickness" strength="70" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Throwable>
+  </Item>
+  <Item name="" identifier="explosivefrag" category="Equipment" Tags="smallitem,explosive" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="weldingtable" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="70"/>
+      <RequiredItem identifier="uex"/>
+      <RequiredItem identifier="iron" mincondition="0.25" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="768,64,64,64" />
+    <Sprite texture="Content/Items/Weapons/weapons.png" depth="0.8" sourcerect="103,58,23,16" />
+    <Body width="23" height="16" density="20" />
+    <Throwable characterusable="false" slots="Any,RightHand,LeftHand" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnUse" range="10000" selectionmode="All" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0">
+        <Explosion range="450.0" structuredamage="10" stun="5" force="20.0" severlimbsprobability="0.2" decal="explosion" decalsize="0.5">
+          <Affliction identifier="burn" strength="25" />
+          <Affliction identifier="internaldamage" strength="55" />
+          <Affliction identifier="gunshotwound" strength="75" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item name="" identifier="holyhandgrenade" category="Equipment" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive" scale="0.5" impactsoundtag="impact_holygrenade">
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="5" spawnprobability="1"/>
+    <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.25"/>
+    <Upgrade gameversion="0.9.3.0" scale="0.5"/>
+    <Price baseprice="1000" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false"/>
+      <Price locationtype="city" multiplier="1.25" minavailable="2" />
+      <Price locationtype="research" multiplier="1.25" sold="false"/>
+      <Price locationtype="military" multiplier="0.9" minavailable="3" />
+      <Price locationtype="mine" multiplier="1.25" sold="false"/>
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="uex" mincondition="0.9" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weldingtable" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="uranium" mincondition="0.2" usecondition="true" />
+      <RequiredItem identifier="compoundn" />
+    </Fabricate>
+    <Sprite texture="HHG.png" sourcerect="0,0,40,57" depth="0.55" origin="0.5,0.5" />
+    <Body radius="20" height="10" density="30" />
+    <ItemComponent characterusable="false">
+      <!-- statuseffect that explodes the grenade when used by something else than a character (e.g. a detonator) -->
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This" delay="2.0">
+        <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" type="OnUse" range="10000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnUse" range="10000" />
+        <Explosion range="1200.0" structuredamage="25" itemdamage="500" force="30" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+          <Affliction identifier="bleeding" strength="120" />
+          <Affliction identifier="explosiondamage" strength="180" />
+          <Affliction identifier="stun" strength="25"/>
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Mods/BaroTech Expansion - Unstable/Weapons/HolyGrenade.ogg" range="1200.0" />
+      </StatusEffect>
+    </ItemComponent>
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="4.0" disabledeltatime="true" checkconditionalalways="true" />
+    </Throwable>
+  </Item>
+</Items>

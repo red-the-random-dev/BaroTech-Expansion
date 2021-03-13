@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+  <Item name="" identifier="fulgusphere" tags="light,railgunammo" category="Misc" sonarsize="5" scale="0.8" hideinmenus="true">
+    <Sprite texture="FulgusphereBase.png" origin="0.5,0.5" sourcerect="0,0,64,64" depth="0.9" color="0.1,0.1,0.1,0.1"/>
+    <LightComponent isOn="true" canbeselected="true" color="1.0,0.0,0.0,0.1" castshadows="true" range="500">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="68,35,23,24" origin="0.5,0.5" />
+    </LightComponent>
+    <Body width="64" height="64" density="10" />
+    <Projectile characterusable="false" launchimpulse="320.0">
+      <Attack structuredamage="250" severlimbsprobability="1.0">
+        <Affliction identifier="internaldamage" strength="200" />
+        <Affliction identifier="burn" strength="150" />
+        <Affliction identifier="bleeding" strength="30" />
+        <Affliction identifier="stun" strength="10" />
+        <sound file="Mods/BaroTech Expansion - Unstable/Weapons/SonicExplosion.ogg" range="5000" />
+      </Attack>
+      <StatusEffect type="Always" target="This" Condition="-50.0">
+        <Conditional physicsbodyactive="eq true" />
+        <Explosion range="40" force="25" flames="false" shockwave="false" sparks="false">
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" Condition="45.0">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" Condition="-10.0">
+        <Explosion range="250" empstrength="5" force="50" structuredamage="45" camerashakeamount="20.0" flames="false" smoke="false">
+          <Affliction identifier="lacerations" strength="75" />
+          <Affliction identifier="stun" strength="2" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Mods/BaroTech Expansion - Unstable/Weapons/StunExplosion.ogg" range="5000" />
+        <Explosion range="150" empstrength="10" force="50" structuredamage="15" camerashakeamount="30.0" flames="false" smoke="false">
+          <Affliction identifier="stun" strength="2" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <AiTarget sightrange="4000.0" />
+  </Item>
+  <Item name="" identifier="plasmaorb" tags="light,railgunammo" category="Misc" sonarsize="5" scale="0.8" hideinmenus="true">
+    <Sprite texture="FulgusphereBase.png" origin="0.5,0.5" sourcerect="0,0,64,64" depth="0.9" color="0.0,0.0,0.0,0.0"/>
+    <LightComponent isOn="true" canbeselected="true" color="1.0,0.0,0.0,0.1" castshadows="true" range="500">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="68,35,23,24" origin="0.5,0.5" />
+    </LightComponent>
+    <Body width="64" height="64" density="10" />
+    <Projectile characterusable="false" launchimpulse="1024.0">
+      <Attack structuredamage="250" itemdamage="170" severlimbsprobability="1.0">
+        <Affliction identifier="burn" strength="150" />
+        <Affliction identifier="bleeding" strength="30" />
+      </Attack>
+      <!-- a 0.1 second lifetime after being fired -->
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="0.1">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <Explosion range="250" force="50" structuredamage="45" itemdamage="35" camerashakeamount="20.0" flames="false" smoke="false">
+          <Affliction identifier="lacerations" strength="75" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="" identifier="fulguspheretube" description="" tags="railgunequipment,railgunammo,quickrecharge" category="Misc" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <Fabricate suitablefabricators="weldingtable" requiredtime="20">
+      <RequiredSkill identifier="electrical" level="50" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="fulgurium" />
+      <requiredItem identifier="bpalienpower" mincondition="0.1" usecondition="true" />
+    </Fabricate>
+    <Sprite texture="NewRailgunShells.png" sourcerect="0,0,215,33" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="This">
+        <Conditional condition="eq 100" />
+        <SpawnItem identifier="fulgusphere" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" condition="-50.0" />
+    </Holdable>
+    <ItemContainer hideitems="true" drawinventory="false" capacity="1" canbeselected="false">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable identifiers="fulgusphere">
+        <StatusEffect type="OnContaining" target="This" condition="99.9" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="floatychargeshell" tags="depthchargeammo" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <Price locationtype="Military" buyprice="75" />
+    <Price locationtype="City" buyprice="100" />
+    <Price locationtype="Outpost" buyprice="200" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="aluminium" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,128,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="0,0,130,89" depth="0.55" origin="0.5,0.5" />
+    <Body width="128" height="85" density="10" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="35.0">
+      <Attack structuredamage="1" damagetype="Blunt">
+        <Affliction identifier="internaldamage" strength="10" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="Contained">
+        <Use />
+      </StatusEffect>
+    </Projectile>
+    <ItemContainer hideitems="true" capacity="1" canbeselected="false">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable identifiers="smallitem,explosive" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="nuclearfloatycharge" tags="depthchargeammo" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <Price locationtype="Military" buyprice="200" />
+    <Price locationtype="City" buyprice="300" />
+    <Price locationtype="Outpost" buyprice="500" />
+    <Deconstruct time="20">
+      <Item identifier="steel" />
+      <Item identifier="uranium" />
+      <Item identifier="uex" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="uranium" />
+      <RequiredItem identifier="uex" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="576,128,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="130,1,129,88" depth="0.55" origin="0.5,0.5" />
+    <Body width="128" height="85" density="10" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="35.0">
+      <Attack structuredamage="1" damagetype="Blunt">
+        <Affliction identifier="internaldamage" strength="10" />
+      </Attack>
+      <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" type="OnImpact" selectionmode="Random" range="20000" />
+      <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" type="OnImpact" selectionmode="Random" range="20000" />
+      <StatusEffect type="OnImpact" Condition="-100.0" stun="10.0" disabledeltatime="true">
+        <Explosion range="1000.0" structuredamage="1000" force="50.0">
+          <Affliction identifier="burn" strength="500" />
+          <Affliction identifier="radiationsickness" strength="100" />
+          <Affliction identifier="internaldamage" strength="400" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="Contained">
+        <Use />
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <ItemContainer hideitems="true" capacity="1" canbeselected="false">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable identifiers="smallitem,explosive" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="floatydecoyshell" tags="depthchargeammo,decoy" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <Price locationtype="Military" buyprice="175" />
+    <Price locationtype="City" buyprice="200" />
+    <Price locationtype="Outpost" buyprice="300" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="sonarbeacon" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="267,64,41,61" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="138,380,129,88" depth="0.55" origin="0.5,0.5" />
+    <Body width="128" height="85" density="10" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
+    <AiTarget soundrange="25000" sonarlabel="Floaty Decoy" fadeouttime="320" />
+    <Projectile characterusable="false" launchimpulse="30.0">
+      <Attack structuredamage="1" damagetype="Blunt">
+        <Affliction identifier="internaldamage" strength="10" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" soundrange="0" setvalue="true" />
+    </Projectile>
+    <ItemContainer hideitems="true" capacity="1" canbeselected="false">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable identifiers="smallitem,explosive" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="nuclearfloatydecoy" tags="depthchargeammo,decoy" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <Price locationtype="Military" buyprice="200" />
+    <Price locationtype="City" buyprice="300" />
+    <Price locationtype="Outpost" buyprice="500" />
+    <Deconstruct time="20">
+      <Item identifier="steel" />
+      <Item identifier="uranium" />
+      <Item identifier="uex" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="uranium" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="sonarbeacon" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="267,64,41,61" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="138,380,129,88" depth="0.55" origin="0.5,0.5" />
+    <Body width="128" height="85" density="10" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
+    <AiTarget sonarlabel="Floaty Decoy" soundrange="25000" fadeouttime="320" />
+    <Projectile characterusable="false" launchimpulse="35.0">
+      <Attack structuredamage="1" damagetype="Blunt">
+        <Affliction identifier="internaldamage" strength="10" />
+      </Attack>
+      <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" type="OnImpact" selectionmode="Random" range="20000" />
+      <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" type="OnImpact" selectionmode="Random" range="20000" />
+      <StatusEffect type="OnImpact" Condition="-100.0" stun="10.0" disabledeltatime="true">
+        <Explosion range="1000.0" structuredamage="500" force="30.0">
+          <Affliction identifier="burn" strength="300" />
+          <Affliction identifier="internaldamage" strength="300" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="Contained">
+        <Use />
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <ItemContainer hideitems="true" capacity="1" canbeselected="false">
+      <GuiFrame relativesize="0.15,0.2" anchor="Center" style="ItemUI" />
+      <Containable identifiers="smallitem,explosive" />
+    </ItemContainer>
+  </Item>
+</Items>
