@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Missions>
+  <MonsterMission
+    name="Mine Defusing"
+    identifier="monsterminefield"
+    type="Monster"
+    description="[location1] reports about ships encountering a mine field on the way to [location2]. Outpost offers [reward] credits for cleaning the way."
+    commonness="45"
+    reward="1300"
+    sonarlabel="Target"
+    successmessage="The samples found after husks termination were very interesting for researchers. [location2] sent the samples to the nearest laboratory and paid you [reward] credits for cleaning the transport way."
+    monsterfile="Mods\BaroTech Expansion - Unstable\Creatures\DemoHusk\Demohusk.xml"
+    monstercount="10" >   
+    <message header="Target terminated" text="It looks like the explosives were attached to the group of husks. Navigate the submarine out of the cavern to claim the reward."/>
+    
+    <Icon texture="Mods/BaroTech Expansion - Unstable/MissionIcons.png" sourcerect="256,0,256,256" color="214,50,48"/>
+
+    <LocationType from="City" to="None"/>
+    <LocationType from="City" to="City"/>
+    <LocationType from="City" to="Outpost"/>
+    <LocationType from="City" to="Military"/>
+    <LocationType from="City" to="Research"/>
+    <LocationType from="City" to="Mine"/>
+    <LocationType from="City" to="Lair"/>
+        
+    <LocationType from="Outpost" to="None"/>
+    <LocationType from="Outpost" to="City"/>
+    <LocationType from="Outpost" to="Outpost"/>
+    <LocationType from="Outpost" to="Military"/>
+    <LocationType from="Outpost" to="Research"/>
+    <LocationType from="Outpost" to="Mine"/>
+    <LocationType from="Outpost" to="Lair"/>
+    
+    <LocationType from="Military" to="None"/>
+    <LocationType from="Military" to="City"/>
+    <LocationType from="Military" to="Outpost"/>
+    <LocationType from="Military" to="Military"/>
+    <LocationType from="Military" to="Research"/>
+    <LocationType from="Military" to="Mine"/>
+    <LocationType from="Military" to="Lair"/>
+    
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="City"/>
+    <LocationType from="Research" to="Outpost"/>
+    <LocationType from="Research" to="Military"/>
+    <LocationType from="Research" to="Research"/>
+    <LocationType from="Research" to="Mine"/>
+    <LocationType from="Research" to="Lair"/>
+    
+    <LocationType from="Mine" to="None"/>
+    <LocationType from="Mine" to="City"/>
+    <LocationType from="Mine" to="Outpost"/>
+    <LocationType from="Mine" to="Military"/>
+    <LocationType from="Mine" to="Research"/>
+    <LocationType from="Mine" to="Mine"/>
+    <LocationType from="Mine" to="Lair"/>
+
+  </MonsterMission>
+  <MonsterMission
+    name="Bot Rampage"
+    identifier="monsterhandymen"
+    type="Monster"
+    description="[location1] reports about several abandoned Handyman units being reactivated and maintaining malicious behavior in sector near [location2]. Outpost offers [reward] credits for neutralization of potential threat."
+    commonness="45"
+    reward="1800"
+    sonarlabel="EAC tracker beacon"
+    successmessage="[location2] personnel didn't intend to ask about details of encounter after meeting you at the wetdock, however, local crews expressed their interests about what could've caused such malfunctions. [location2] paid you [reward] credits for cleaning the transport way."
+    monsterfile="Mods\BaroTech Expansion - Unstable\Creatures\Handyman\Huntsman.xml"
+    monstercount="4" >   
+    <message header="Target terminated" text="Malfunctioning Handyman units were successfully shut down. Navigate submarine out of the caverns to claim the reward."/>
+    
+    <Icon texture="Mods/BaroTech Expansion - Unstable/MissionIcons.png" sourcerect="512,0,256,256" color="243,146,45"/>
+
+    <LocationType from="City" to="None"/>
+    <LocationType from="City" to="City"/>
+    <LocationType from="City" to="Outpost"/>
+    <LocationType from="City" to="Military"/>
+    <LocationType from="City" to="Research"/>
+    <LocationType from="City" to="Mine"/>
+    <LocationType from="City" to="Lair"/>
+        
+    <LocationType from="Outpost" to="None"/>
+    <LocationType from="Outpost" to="City"/>
+    <LocationType from="Outpost" to="Outpost"/>
+    <LocationType from="Outpost" to="Military"/>
+    <LocationType from="Outpost" to="Research"/>
+    <LocationType from="Outpost" to="Mine"/>
+    <LocationType from="Outpost" to="Lair"/>
+    
+    <LocationType from="Military" to="None"/>
+    <LocationType from="Military" to="City"/>
+    <LocationType from="Military" to="Outpost"/>
+    <LocationType from="Military" to="Military"/>
+    <LocationType from="Military" to="Research"/>
+    <LocationType from="Military" to="Mine"/>
+    <LocationType from="Military" to="Lair"/>
+    
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="City"/>
+    <LocationType from="Research" to="Outpost"/>
+    <LocationType from="Research" to="Military"/>
+    <LocationType from="Research" to="Research"/>
+    <LocationType from="Research" to="Mine"/>
+    <LocationType from="Research" to="Lair"/>
+    
+    <LocationType from="Mine" to="None"/>
+    <LocationType from="Mine" to="City"/>
+    <LocationType from="Mine" to="Outpost"/>
+    <LocationType from="Mine" to="Military"/>
+    <LocationType from="Mine" to="Research"/>
+    <LocationType from="Mine" to="Mine"/>
+    <LocationType from="Mine" to="Lair"/>
+
+  </MonsterMission>
+</Missions>

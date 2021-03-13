@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Override>
+<Items>  
+  <Hyperzine name="" identifier="hyperzine" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <SuitableTreatment identifier="drowsiness" suitability="50" />
+    <Price locationtype="Research" buyprice="300" />
+    <Price locationtype="Military" buyprice="350" />
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="25">
+      <RequiredSkill identifier="medical" level="38" />
+      <RequiredItem identifier="meth" />
+      <RequiredItem identifier="steroids" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,448,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="249,0,62,115" depth="0.6" origin="0.5,0.5" />
+    <Body width="60" height="110" density="15" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="50"></RequiredSkill>
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" duration="60.0">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="internaldamage" amount="0.1" />
+        <ReduceAffliction identifier="oxygenlow" amount="0.1" />
+        <ReduceAffliction identifier="stun" amount="10" />
+        <Affliction identifier="psychosis" amount="0.1" />
+        <Affliction identifier="haste" amount="100" />
+        <Affliction identifier="strengthen" amount="0.3" />
+        <ReduceAffliction identifier="drowsiness" amount="2" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Character" duration="60.0">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="internaldamage" amount="0.05" />
+        <ReduceAffliction identifier="oxygenlow" amount="0.05" />
+        <ReduceAffliction identifier="stun" amount="5" />
+        <Affliction identifier="psychosis" amount="0.2" />
+        <Affliction identifier="haste" amount="50" />
+        <Affliction identifier="strengthen" amount="0.15" />
+        <ReduceAffliction identifier="drowsiness" amount="0.5" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnImpact" target="Character" duration="60.0">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="internaldamage" amount="0.1" />
+        <ReduceAffliction identifier="oxygenlow" amount="0.1" />
+        <ReduceAffliction identifier="stun" amount="10" />
+        <Affliction identifier="psychosis" amount="0.1" />
+        <Affliction identifier="haste" amount="100" />
+        <Affliction identifier="strengthen" amount="0.3" />
+        <ReduceAffliction identifier="drowsiness" amount="2" />
+      </StatusEffect>
+    </Projectile>
+  </Hyperzine>
+  <Methamphetamine name="" identifier="meth" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <Price locationtype="Research" buyprice="40" />
+    <Price locationtype="Military" buyprice="50" />
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="20">
+      <RequiredSkill identifier="medical" level="14" />
+      <RequiredItem identifier="phosphorus" />
+      <RequiredItem identifier="chlorine" />
+      <RequiredItem identifier="carbon" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,448,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="124,0,62,115" depth="0.6" origin="0.5,0.5" />
+    <Body width="60" height="110" density="15" />
+    <SuitableTreatment identifier="drowsiness" suitability="35" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="18"></RequiredSkill>
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" duration="60.0">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="internaldamage" amount="0.1" />
+        <ReduceAffliction identifier="oxygenlow" amount="0.1" />
+        <ReduceAffliction identifier="stun" amount="10" />
+        <Affliction identifier="psychosis" amount="0.4" />
+        <ReduceAffliction identifier="drowsiness" amount="2" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Character" duration="60.0">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="internaldamage" amount="0.1" />
+        <ReduceAffliction identifier="oxygenlow" amount="0.1" />
+        <ReduceAffliction identifier="stun" amount="15" />
+        <Affliction identifier="psychosis" amount="0.5" />
+        <ReduceAffliction identifier="drowsiness" amount="0.5" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnUse" target="Character">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Affliction identifier="haste" amount="80" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnImpact" target="Character">
+        <Affliction identifier="haste" amount="80" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnImpact" target="Character" duration="60.0">
+        <ReduceAffliction identifier="internaldamage" amount="0.1" />
+        <ReduceAffliction identifier="oxygenlow" amount="0.1" />
+        <ReduceAffliction identifier="stun" amount="10" />
+        <Affliction identifier="psychosis" amount="0.4" />
+        <ReduceAffliction identifier="drowsiness" amount="2" />
+      </StatusEffect>
+    </Projectile>
+  </Methamphetamine>
+</Items>
+</Override>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Items>
+	<Item name="" identifier="detonatorcratesealed" scale="0.5" linkable="true" pickdistance="150" hideinmenus="true" impactsoundtag="impact_metal_heavy" category="Misc">
+    	<Sprite texture="Content/Items/Containers/containers.png" depth="0.54" sourcerect="407,376,152,89" origin="0.5,0.5" />
+    	<Body width="150" height="85" density="10" />
+    	<Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect">
+      		<StatusEffect type="InWater" target="This" Condition="-2.5">
+        		<RequiredItem identifier="wetchip" type="Contained" />
+      		</StatusEffect>
+      		<StatusEffect type="OnBroken" target="Contained" targetidentifiers="explosive,nitroglycerin">
+      			<Use />
+      		</StatusEffect>
+      		<StatusEffect type="Always" target="This" condition="0.5"/>
+                <StatusEffect type="Always" target="Contained" targetidentifiers="volatilecompoundn" condition="0.35"/>
+		<StatusEffect type="OnContained" target="This">
+			<Conditional condition="lt 100" />
+			<sound file="Content/Items/Button/Switch2.ogg" loop="false" range="200" volume="0.4"/>
+		</StatusEffect>
+		<StatusEffect type="OnFire" target="This" condition="-2">
+			<RequiredItem identifier="heatchip" type="Contained" />
+		</StatusEffect>
+		<StatusEffect type="InWater" target="This" Condition="2">
+        		<RequiredItem identifier="heatchip" type="Contained" />
+      		</StatusEffect>
+    	</Holdable>
+    	<ItemContainer capacity="10" canbeselected="false" hideitems="true" drawinventory="false" showconditionincontainedstateindicator="true">
+		<ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="128,205,110,19" />
+      		<Containable identifiers="explosive,nitroglycerin,wetchip,sonarbeacon" />
+                <Containable identifiers="timerchip">
+                	<StatusEffect type="OnContaining" target="This" Condition="-2.5" />
+                </Containable>
+		<Containable identifiers="heatchip">
+                	<StatusEffect type="OnContaining" target="This" Condition="-1" />
+                </Containable>
+    	</ItemContainer>
+  	</Item>
+  	
+  	<Item name="" identifier="metalcratesealed" scale="0.5" linkable="true" hideinmenus="true" pickdistance="150" impactsoundtag="impact_metal_heavy" category="Misc">
+    	<!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,128,64,64" />-->
+    	<Sprite texture="Content/Items/Containers/containers.png" depth="0.54" sourcerect="407,376,152,89" origin="0.5,0.5" />
+    	<Body width="150" height="85" density="50" />
+    	<Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect"/>
+    	<ItemContainer capacity="20" canbeselected="false" hideitems="true" drawinventory="false">
+		<ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="128,205,110,19" />
+      		<Containable identifiers="smallitem,mediumitem" />
+    	</ItemContainer>
+  	</Item>
+  	
+  	<Item name="" identifier="artifactsealed" scale="0.5" linkable="true" hideinmenus="true" pickdistance="150" impactsoundtag="impact_metal_heavy" category="Misc">
+    	<!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="448,128,64,64" />-->
+    	<Sprite texture="Content/Items/Containers/containers.png" depth="0.54" sourcerect="407,376,152,89" origin="0.5,0.5" />
+    	<Body width="150" height="85" density="50" />
+    	<Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect"/>
+    	<ItemContainer capacity="1" canbeselected="false" hideitems="true" drawinventory="false">
+		<ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="128,205,110,19" />
+      		<Containable identifiers="alien" />
+    	</ItemContainer>
+  	</Item>
+</Items>

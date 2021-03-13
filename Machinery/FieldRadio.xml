@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="radiotransreceiver" scale="0.5" linkable="true" pickdistance="150" tags="rechargeable" impactsoundtag="impact_metal_heavy" category="Equipment">
+    <Sprite texture="RadioTransreceiver.png" depth="0.54" sourcerect="0,0,146,83" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="weldingtable" requiredtime="30">
+      <RequiredSkill identifier="mechanical" level="35" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="bpradio" mincondition="0.1" usecondition="true" />
+    </Fabricate>
+    <Body width="150" height="85" density="10" />
+    <WifiComponent linkToChat="true" range="75000.0" MinChatMessageInterval="0.0" canbeselected="true" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="This" condition="-0.2" />
+      <StatusEffect type="OnContained" target="Character" speedmultiplier="0.8" setvalue="true"><Conditional isDead="false" /></StatusEffect>
+    </Holdable>
+    <ItemContainer capacity="6" canbeselected="false" hideitems="true" showconditionincontainedstateindicator="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="1,70,107,31" />
+      <Containable identifiers="smallitem,mediumitem" />
+    </ItemContainer>
+  </Item>
+</Items>

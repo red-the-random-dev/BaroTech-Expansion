@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Conversations identifier="btechconversations" Language="Russian">
+
+<!-- Personality traits -->
+<PersonalityTrait name="Professional" alloweddialogtags="professional,none" commonness="1" />
+<PersonalityTrait name="Laid-back" alloweddialogtags="laid-back,none" commonness="1" />
+<PersonalityTrait name="Rude" alloweddialogtags="rude,none" commonness="1" />
+<PersonalityTrait name="Tough" alloweddialogtags="tough,none" commonness="1" />
+<PersonalityTrait name="Joker" alloweddialogtags="joker,none" commonness="1" />
+<PersonalityTrait name="Broken English" alloweddialogtags="brokenenglish" commonness="1" />
+<PersonalityTrait name="Fearful" alloweddialogtags="fearful,none" commonness="1" />
+<PersonalityTrait name="Crazy" alloweddialogtags="crazy,none" commonness="1" />
+
+<Conversation speaker="0" line="Древнее зло пробудилось!" speakertags="joker,crazy" flags="Initial">
+	<Conversation speaker="1" line="Современное зло пробудилось!" speakertags="crazy">
+		<Conversation speaker="0" line="" />
+		<Conversation speaker="2" line="Ну всё, приехали!" allowedjobs="captain" speakertags="tough" />
+		<Conversation speaker="2" line="Два дебила - это сила." allowedjobs="captain" speakertags="rude" />
+	</Conversation>
+	<Conversation speaker="1" line="Не такое уж и древнее." allowedjobs="captain" />
+	<Conversation speaker="1" line="О, привет, зло! Хорошо спалось?" speakertags="crazy">
+		<Conversation speaker="2" line="Два дебила - это сила." allowedjobs="captain" speakertags="rude" />
+	</Conversation>
+	<Conversation speaker="1" line="Пойду проверю его каюту на наличие спирта, капитан." allowedjobs="securityofficer" speakertags="professional">
+		<Conversation speaker="2" line="Нет, на опьянение не похоже. Просто оставь его в покое." allowedjobs="captain" />
+	</Conversation>
+	<Conversation speaker="1" line="Наконец-то ты очнулся. Тебя даже вчерашний шторм не разбудил.">
+		<Conversation speaker="0" line="" />
+		<Conversation speaker="2" line="Шторм? Здесь? Мы же под водой!" speakertags="professional" />
+	</Conversation>
+</Conversation>
+
+<Conversation speaker="0" line="Знаете, я тут вспомнил одну историю." maxintensity="0.4">
+	<Conversation speaker="0" line="Точнее запись об одном инциденте.">
+		<Conversation speaker="0" line="Короче, отправился один экипаж в руины. Значется, заходят внутрь...">
+			<Conversation speaker="1" line="А там армяне в нарды играют?" speakertags="joker" />
+			<Conversation speaker="0" line="Проплывают через множество коридоров, встречают множество опасностей...">
+				<Conversation speaker="0" line="И находят они неизвестный артефакт, и стоило его только доставить на борт, как тут один из членов экипажа устроил сущий хаос...">
+					<Conversation speaker="0" line="Подлодка оказывается в огне, от стен не оставалось живого места после взрыва реактора...">
+						<Conversation speaker="0" line="И больше их никто, никто не видел..." >
+							<Conversation speaker="1" line="Спасибо за новый кошмар!" speakertags="fearful,rude" />
+							<Conversation speaker="1" line="Ты много чего навыдумывал." speakertags="professional">
+								<Conversation speaker="1" line="Этот экипаж выжил и был доставлен на аванпост спасателями.">
+									<Conversation speaker="1" line="С большими потерями, но выжил." />
+								</Conversation>
+							</Conversation>
+							<Conversation speaker="1" line="Ну да, этот отчёт относительно недавно обнародовали." />
+						</Conversation>
+					</Conversation>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation speaker="0" line="А-а-а-ах...." flags="SleepyLow" />
+
+<Conversation speaker="0" line="Думаю, мне надо отдохнуть..." flags="SleepyMedium" />
+
+<Conversation speaker="0" line="Голова кругом... Думаю, нужно вздремнуть." flags="SleepyMedium" />
+
+<Conversation speaker="0" line="Народ, пойду поср.. ой.. посплю." tags="brokenenglish" flags="SleepyMedium" />
+</Conversations>
+

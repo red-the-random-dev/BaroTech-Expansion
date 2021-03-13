@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Missions>
+  <CargoMission
+ name="Special Delivery"
+    identifier="cargowetbombvolcn"
+    type="Cargo"
+    description="A strange cargo crate was stored on [location1] for several weeks. Now [reward] credits are offered in exchange for delivering crate to a customer in [location2]."
+    commonness="20"
+    reward="2000"
+    achievementidentifier="cargomission"
+    successmessage="Security check revealed that container was designed to detonate contained explosives on some time. Personnel in [location2] was very worried after checking the crate's payload, hovewer, they still pay you [reward] credits for enough bravery for transporting such dangerous cargo.">
+    <Items>
+      <Item identifier="detonatorcratesealed">
+        <Item identifier="volatilecompoundn" amount="9"/>
+        <Item identifier="wetchip" amount="1"/>
+      </Item>
+    </Items>
+    
+    <Icon texture="Mods/BaroTech Expansion - Unstable/MissionIcons.png" sourcerect="0,0,256,256" color="243,146,55"/>
+
+    <LocationType from="City" to="City"/>
+    <LocationType from="City" to="Outpost"/>
+    <LocationType from="City" to="Military"/>
+    <LocationType from="City" to="Research"/>
+    <LocationType from="City" to="Mine"/>
+            
+    <LocationType from="Military" to="City"/>
+    <LocationType from="Military" to="Outpost"/>
+    <LocationType from="Military" to="Military"/>
+    <LocationType from="Military" to="Research"/>
+    <LocationType from="Military" to="Mine"/>
+    
+    <LocationType from="Research" to="City"/>
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="Outpost"/>
+
+  </CargoMission>
+  <CargoMission
+ name="Special Delivery"
+    identifier="cargowetbombcn"
+    type="Cargo"
+    description="A strange cargo crate was stored on [location1] for several weeks. Now [reward] credits are offered in exchange for delivering crate to a customer in [location2]."
+    commonness="21"
+    reward="2000"
+    achievementidentifier="cargomission"
+    successmessage="Security check revealed that container was designed to detonate contained explosives on some time. Personnel in [location2] was very worried after checking the crate's payload, hovewer, they still pay you [reward] credits for enough bravery for transporting such dangerous cargo.">
+    <Items>
+      <Item identifier="detonatorcratesealed">
+        <Item identifier="compoundn" amount="9"/>
+        <Item identifier="wetchip" amount="1"/>
+      </Item>
+    </Items>
+    
+    <Icon texture="Mods/BaroTech Expansion - Unstable/MissionIcons.png" sourcerect="0,0,256,256" color="243,146,55"/>
+
+    <LocationType from="City" to="City"/>
+    <LocationType from="City" to="Outpost"/>
+    <LocationType from="City" to="Military"/>
+    <LocationType from="City" to="Research"/>
+    <LocationType from="City" to="Mine"/>
+            
+    <LocationType from="Military" to="City"/>
+    <LocationType from="Military" to="Outpost"/>
+    <LocationType from="Military" to="Military"/>
+    <LocationType from="Military" to="Research"/>
+    <LocationType from="Military" to="Mine"/>
+    
+    <LocationType from="Research" to="City"/>
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="Outpost"/>
+  </CargoMission>
+  <CargoMission
+ name="Special Delivery"
+    identifier="cargowetbombnuke"
+    type="Cargo"
+    description="A strange cargo crate was stored on [location1] for several weeks. Now [reward] credits are offered in exchange for delivering crate to a customer in [location2]."
+    commonness="19"
+    reward="2000"
+    achievementidentifier="cargomission"
+    successmessage="Security check revealed that container was designed to detonate contained explosives on some time. Personnel in [location2] was very worried after checking the crate's payload, hovewer, they still pay you [reward] credits for enough bravery for transporting such dangerous cargo.">
+    <Items>
+      <Item identifier="detonatorcratesealed">
+        <Item identifier="explosivenuke" amount="9"/>
+        <Item identifier="wetchip" amount="1"/>
+      </Item>
+    </Items>
+    
+    <Icon texture="Mods/BaroTech Expansion - Unstable/MissionIcons.png" sourcerect="0,0,256,256" color="243,146,55"/>
+
+    <LocationType from="City" to="City"/>
+    <LocationType from="City" to="Outpost"/>
+    <LocationType from="City" to="Military"/>
+    <LocationType from="City" to="Research"/>
+    <LocationType from="City" to="Mine"/>
+            
+    <LocationType from="Military" to="City"/>
+    <LocationType from="Military" to="Outpost"/>
+    <LocationType from="Military" to="Military"/>
+    <LocationType from="Military" to="Research"/>
+    <LocationType from="Military" to="Mine"/>
+    
+    <LocationType from="Research" to="City"/>
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="Outpost"/>
+  </CargoMission>
+  <CargoMission
+ name="Special Delivery"
+    identifier="cargonitroglycerinsealed"
+    type="Cargo"
+    description="A strange cargo crate was stored on [location1] for several weeks. Now [reward] credits are offered in exchange for delivering crate to a customer in [location2]."
+    commonness="22"
+    reward="2000"
+    achievementidentifier="cargomission"
+    successmessage="Security check revealed that container was filled with nitroglycerin. Personnel of [location2] took the cargo and paid you for the delivery.">
+    <Items>
+      <Item identifier="metalcratesealed">
+        <Item identifier="nitroglycerin" amount="10"/>
+      </Item>
+    </Items>
+    
+    <Icon texture="Mods/BaroTech Expansion - Unstable/MissionIcons.png" sourcerect="0,0,256,256" color="243,146,55"/>
+
+    <LocationType from="City" to="City"/>
+    <LocationType from="City" to="Outpost"/>
+    <LocationType from="City" to="Military"/>
+    <LocationType from="City" to="Research"/>
+    <LocationType from="City" to="Mine"/>
+            
+    <LocationType from="Military" to="City"/>
+    <LocationType from="Military" to="Outpost"/>
+    <LocationType from="Military" to="Military"/>
+    <LocationType from="Military" to="Research"/>
+    <LocationType from="Military" to="Mine"/>
+    
+    <LocationType from="Research" to="City"/>
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="Outpost"/>
+  </CargoMission>
+  <CargoMission
+ name="Special Delivery"
+    identifier="cargonasonovsealed"
+    type="Cargo"
+    description="A strange cargo crate was stored on [location1] for several weeks. Now [reward] credits are offered in exchange for delivering crate to a customer in [location2]."
+    commonness="19"
+    reward="2000"
+    achievementidentifier="cargomission"
+    successmessage="Security check revealed that there was an artifact of unknown origin lying in container. Personnel of [location2] sent cargo for additional research and paid you for the delivery.">
+    <Items>
+      <Item identifier="artifactsealed">
+        <Item identifier="nasonovartifact" amount="1"/>
+      </Item>
+    </Items>
+    
+    <Icon texture="Mods/BaroTech Expansion - Unstable/MissionIcons.png" sourcerect="0,0,256,256" color="243,146,55"/>
+
+    <LocationType from="City" to="City"/>
+    <LocationType from="City" to="Outpost"/>
+    <LocationType from="City" to="Military"/>
+    <LocationType from="City" to="Research"/>
+    <LocationType from="City" to="Mine"/>
+            
+    <LocationType from="Military" to="City"/>
+    <LocationType from="Military" to="Outpost"/>
+    <LocationType from="Military" to="Military"/>
+    <LocationType from="Military" to="Research"/>
+    <LocationType from="Military" to="Mine"/>
+    
+    <LocationType from="Research" to="City"/>
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="Outpost"/>
+  </CargoMission>
+  <CargoMission
+ name="Special Delivery"
+    identifier="cargoheatcn"
+    type="Cargo"
+    description="A strange cargo crate was stored on [location1] for several weeks. Now [reward] credits are offered in exchange for delivering crate to a customer in [location2]."
+    commonness="19"
+    reward="2000"
+    achievementidentifier="cargomission"
+    successmessage="Security check revealed that container was designed to detonate contained explosives on some time. Personnel in [location2] was very worried after checking the crate's payload, hovewer, they still pay you [reward] credits for enough bravery for transporting such dangerous cargo.">
+    <Items>
+      <Item identifier="detonatorcratesealed">
+        <Item identifier="compoundn" amount="9"/>
+        <Item identifier="heatchip" amount="1"/>
+      </Item>
+    </Items>
+    
+    <Icon texture="Mods/BaroTech Expansion - Unstable/MissionIcons.png" sourcerect="0,0,256,256" color="243,146,55"/>
+
+    <LocationType from="City" to="City"/>
+    <LocationType from="City" to="Outpost"/>
+    <LocationType from="City" to="Military"/>
+    <LocationType from="City" to="Research"/>
+    <LocationType from="City" to="Mine"/>
+            
+    <LocationType from="Military" to="City"/>
+    <LocationType from="Military" to="Outpost"/>
+    <LocationType from="Military" to="Military"/>
+    <LocationType from="Military" to="Research"/>
+    <LocationType from="Military" to="Mine"/>
+    
+    <LocationType from="Research" to="City"/>
+    <LocationType from="Research" to="None"/>
+    <LocationType from="Research" to="Outpost"/>
+  </CargoMission>
+</Missions>

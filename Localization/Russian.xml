@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" translatedname="Русский">
+  <!-- Подсказки в меню загрузки -->
+  <loadingscreentip>Бомбу в закрытом ящике можно распознать по тихим щелчкам, которые можно услышать, нося контейнер в руках. Будьте начеку при проверке груза!</loadingscreentip> 
+  <!-- Электроника -->
+  <entityname.psc>Элемент тихого хода</entityname.psc>
+  <entitydescription.psc>Микросхема, используемая для снижения потребления заряда инструментами.</entitydescription.psc>
+  <entityname.audioprocessor>Аудиопроцессор</entityname.audioprocessor>
+  <entitydescription.audioprocessor>Проигрыватель, воспроизводящий аудио с нотных листов.</entitydescription.audioprocessor>
+  <entityname.2rdock>ББПР</entityname.2rdock>
+  <entitydescription.2rdock>Бортовой блок питания и ремонта, используемый для перезарядки предметов со встроенной батареей или ремонта инструментов.</entitydescription.2rdock>
+  <entityname.hydrogengenerator>Генератор водорода</entityname.hydrogengenerator>
+  <entitydescription.hydrogengenerator>Устройство для перезарядки баллонов для водорода.</entitydescription.hydrogengenerator>
+  <entityname.wetchip>Гидроимпульсный элемент</entityname.wetchip>
+  <entitydescription.wetchip>Используется с ящиком-детонатором. Взрывает заряды после контакта с водой с небольшой задержкой.</entitydescription.wetchip>
+  <entityname.timerchip>Элемент задержки детонации</entityname.timerchip>
+  <entitydescription.timerchip>Используется с ящиком-детонатором. Взрывает снаряды спустя определённое время.</entitydescription.timerchip>
+  <entityname.heatchip>Элемент реакции на перегрев</entityname.heatchip>
+  <entitydescription.heatchip>Используется с ящиком-детонатором. Взрывает снаряды спустя определённое время после нахождения на воздухе.</entitydescription.heatchip>
+  <entityname.lifechip>Элемент обнаружения признаков жизни</entityname.lifechip>
+  <entitydescription.lifechip>Используется с ящиком-детонатором. Взрывает снаряды спустя определённое время после смерти несущего ящик персонажа.</entitydescription.lifechip>
+  <entityname.holdchip>Элемент реакции на отпуск</entityname.holdchip>
+  <entitydescription.holdchip>Используется с ящиком-детонатором. Взрывает снаряды спустя определённое время после того, как ящик будет сброшен.</entitydescription.holdchip>
+  <entityname.announcerspeaker>Динамик уведомления</entityname.announcerspeaker>
+  <entitydescription.announcerspeaker>При активации воспроизводит запись на кассете.</entitydescription.announcerspeaker>
+  <entityname.smallbattery>Малая батарея</entityname.smallbattery>
+  <entitydescription.smallbattery>Обычно используется для хранения энергии на случай отказа реактора или питания аварийных систем.</entitydescription.smallbattery>
+  <entityname.switchpanel>Панель с переключателями</entityname.switchpanel>
+  <entitydescription.switchpanel>Имеет 5 настраиваемых переключателей для подключения к сигнальным элементам.</entitydescription.switchpanel>
+  <entityname.protectivefuse>Предохранитель</entityname.protectivefuse>
+  <entitydescription.protectivefuse>Защищает энергосеть от перегрузок.</entitydescription.protectivefuse>
+  <entityname.emergencysirenb>Аварийная сирена B</entityname.emergencysirenb>
+  <entitydescription.emergencysirenb>При активации издаёт сигнал об объявлении эвакуации.</entitydescription.emergencysirenb>
+  <entityname.textdisplaylarge>Широкий текстовый экран</entityname.textdisplaylarge>
+  <entityname.securityrelay>Реле безопасности</entityname.securityrelay>
+  <entitydescription.securityrelay>Разъединительный элемент, предназначенный для ограничения доступа к компонентам электронного управления.</entitydescription.securityrelay>
+  <entityname.securityrelay_omni>Реле безопасности // ОМНИ</entityname.securityrelay_omni>
+  <entitydescription.securityrelay_omni>Разъединительный элемент, предназначенный для ограничения доступа к компонентам электронного управления.\n[ОМНИ]</entitydescription.securityrelay_omni>
+  <entityname.bypassbutton>Байпас-сенсор</entityname.bypassbutton>
+  <entitydescription.bypassbutton>Кнопка с возможностью отправки сигнала при помощи чипа с нужным тегом доступа.</entitydescription.bypassbutton>
+  
+  <!-- Соединительные чипы -->
+  <entityname.acc_generic>Соединительный чип</entityname.acc_generic>
+  <entitydescription.acc_generic>Предоставляет доступ к управлению реле безопасности.</entitydescription.acc_generic>
+  <entityname.acc_omni>Соединительный чип // ОМНИ</entityname.acc_omni>
+  <entitydescription.acc_omni>Предоставляет доступ к реле безопасности с любым из общепринятых ограничительных тегов.\n[ОМНИ] [ОРУЖ] [РУЛЬ] [ИНЖ] [МЕД]</entitydescription.acc_omni>
+   
+  <!-- Аппаратура -->
+  <entityname.weldingtable>Сварочный стол</entityname.weldingtable>
+  <entitydescription.weldingtable>Стол с подвижным сварочным устройством. Используется для модификации предметов.</entitydescription.weldingtable>
+  <entityname.printer>Принтер</entityname.printer>
+  <entitydescription.printer>Машина для печати документов или сборочных схем.</entitydescription.printer>
+  <entityname.surveillancemonitor3>Монитор видеонаблюдения</entityname.surveillancemonitor3>
+  <entityname.surveillancemonitor5>Монитор видеонаблюдения</entityname.surveillancemonitor5>
+  <entityname.surveillancemonitor7>Монитор видеонаблюдения</entityname.surveillancemonitor7>
+  <entitydescription.surveillancemonitor3>Устройство для просмотра изображений с камер внутри или снаружи подлодки. Имеет 3 настраиваемые кнопки.</entitydescription.surveillancemonitor3>
+  <entitydescription.surveillancemonitor5>Устройство для просмотра изображений с камер внутри или снаружи подлодки. Имеет 5 настраиваемых кнопок.</entitydescription.surveillancemonitor5>
+  <entitydescription.surveillancemonitor7>Устройство для просмотра изображений с камер внутри или снаружи подлодки. Имеет 7 настраиваемых кнопок.</entitydescription.surveillancemonitor7>
+  <entityname.portableo2generator>Портативный генератор кислорода</entityname.portableo2generator>
+  <entitydescription.portableo2generator>Устройство для полевой перезарядки баллонов с кислородом посредством электролиза воды.</entitydescription.portableo2generator>
+  <entityname.thermogenerator>Термоэлектрический генератор</entityname.thermogenerator>
+  <entityname.fusionreactor>Термоядерный реактор</entityname.fusionreactor>
+  <entityname.isotopeplate>Изотопная пластина</entityname.isotopeplate>
+  <entityname.thoriumisotopeplate>Ториевая изотопная пластина</entityname.thoriumisotopeplate>
+  <entityname.incendiumisotopeplate>Воспламенитовая изотопная пластина</entityname.incendiumisotopeplate>
+  <entityname.detonatorcrate>Ящик-детонатор</entityname.detonatorcrate>
+  <entitydescription.detonatorcrate>Контейнер для переноски и подрыва взрывчатки.</entitydescription.detonatorcrate>
+  <entityname.radiotransreceiver>Радиостанция</entityname.radiotransreceiver>
+  <entitydescription.radiotransreceiver>Устройство для связи на больших расстояниях при различных экспедициях. Имеет 6 ячеек для переноса инвентаря.</entitydescription.radiotransreceiver>
+  <entityname.steelpostcabinet>Большой шкаф пневмопочты</entityname.steelpostcabinet>
+  <entityname.posttray>Лоток пневмопочты</entityname.posttray>
+  <entitydescription.posttray>Устройство для передачи предметов через сеть пневмопочты.</entitydescription.posttray>
+  <entityname.posttray_secure>Лоток пневмопочты с замком</entityname.posttray_secure>
+  <entitydescription.posttray_secure>Устройство для передачи предметов через сеть пневмопочты.</entitydescription.posttray_secure>
+  <entityname.overdriveengine>Двигатель моментального ускорения</entityname.overdriveengine>
+  <entityname.hppengine>Гидропомповый двигатель</entityname.hppengine>
+  <entitydescription.hppengine>Двигатель, работающий за счёт пропуска потоков воды через себя.</entitydescription.hppengine>
+  <entityname.twostrokepump>Двухлинейный насос</entityname.twostrokepump>
+  <entitydescription.twostrokepump>Мощная помпа, предназначенная прежде всего для работы балластных отсеков.</entitydescription.twostrokepump>
+  <entityname.o2drainingduct>Клапан выкачки кислорода</entityname.o2drainingduct>
+  <entityname.portablethermogenerator>Портативный термоэлектрический генератор</entityname.portablethermogenerator>
+  <entitydescription.portablethermogenerator>Устройство для питания изолированных энергосетей.</entitydescription.portablethermogenerator>
+  <entityname.largedepthchargeloader>Большой зарядник глубинных бомб</entityname.largedepthchargeloader>
+  <entitydescription.largedepthchargeloader>Зарядник глубинных бомб с 3 слотами.</entitydescription.largedepthchargeloader>
+  <entityname.thermitecanister>Канистра с термитом</entityname.thermitecanister>
+  <entitydescription.thermitecanister>Воспламеняемая субстанция, прожигающая стены подводных лодок. Имеется встроенный фитиль для поджигания.</entitydescription.thermitecanister>
+  <entityname.thermaldrill>Термический бур</entityname.thermaldrill>
+  <entitydescription.thermaldrill>Плазменная дрелевая установка, монтируемая на судно. Имеет внушительный урон по сооружениям, но вместе с этим обладает малым радиусом поражения и высоким расходом энергии.</entitydescription.thermaldrill>
+  <entityname.thermaldrillionizer>Ионизатор для термобура</entityname.thermaldrillionizer>
+  <entitydescription.thermaldrillionizer>Устройства для подачи плазмы в термобур.</entitydescription.thermaldrillionizer>
+  <entityname.pilotseat>Кресло пилота</entityname.pilotseat>
+  <entitydescription.pilotseat>Устройство для управления судами с возможностью просматривать вид с подключённой камеры.</entitydescription.pilotseat>
+  
+  <!-- Улучшенные инструменты -->
+  <entityname.underwaterscooterii>Подводный скутер II</entityname.underwaterscooterii>
+  <entitydescription.underwaterscooterii>Подводное транспортное устройство, работающее от батарей. Имеется cхема, увеличивающая время работы.</entitydescription.underwaterscooterii>
+  <entityname.underwaterscooteriii>Подводный скутер III</entityname.underwaterscooteriii>
+  <entitydescription.underwaterscooteriii>Подводное транспортное устройство, работающее от батарей. Имеется схема, увеличивающая время работы и переработанная тяговая турбина.</entitydescription.underwaterscooteriii>
+  <entityname.divingsuitinv>Водолазный скафандр с инвентарным модулем</entityname.divingsuitinv>
+  <entitydescription.divingsuitinv>Водолазный костюм с поддержанием атмосферного давления и несколькими слотами под инструменты. Способен выдержать даже колоссальное давление воды под ледяной корой Европы.</entitydescription.divingsuitinv> 
+  <entityname.heavysuit>Тяжёлый водолазный скафандр</entityname.heavysuit>
+  <entitydescription.heavysuit>Водолазный костюм с поддержанием атмосферного давления и бронированием, защищающим от атак существ и более высокого давления.</entitydescription.heavysuit>
+  <entityname.hydrogentank>Водородный баллон</entityname.hydrogentank>
+  <entitydescription.hydrogentank>Портативный баллон водорода. Используется в реакциях синтеза ядер.</entitydescription.hydrogentank>
+  <entityname.deuteriumtank>Дейтериевый баллон</entityname.deuteriumtank>
+  <entitydescription.deuteriumtank>Портативный баллон дейтерия. При слиянии даёт больше энергии и имеет больше массы, чем обычный водород.</entitydescription.deuteriumtank>
+  <entityname.plasmacutter_high>Высокоинтенсивный плазменный резак</entityname.plasmacutter_high>
+  <entitydescription.plasmacutter_high>Разрезает различные материалы струей ионизированного кислорода или другого газа.</entitydescription.plasmacutter_high>
+  
+  <!-- Материалы -->
+  <entityname.paper>Бумага</entityname.paper>
+  <entitydescription.paper>Тонкий белый лист формата А4. Используется принтером.</entitydescription.paper>
+  <entityname.adrenogen>Адреноген</entityname.adrenogen>
+  <entitydescription.adrenogen>Сильный препарат для снятия сонливости.</entitydescription.adrenogen>
+  <entityname.ethylzine>Этилцин</entityname.ethylzine>
+  <entitydescription.ethylzine>Смесь этанола и гиперцина. Вызывает сильную дизориентацию.</entitydescription.ethylzine>
+  <entityname.isonanitegel>Изонанитовый гель</entityname.isonanitegel>
+  <entitydescription.isonanitegel>Плазма, насыщенная нанитами, предназначенными для лечения внутренних травм. Избегайте передозировки!</entitydescription.isonanitegel>
+  <entityname.calibratedisonanitegel>Калиброванный изонанитовый гель</entityname.calibratedisonanitegel>
+  <entitydescription.calibratedisonanitegel>Плазма, насыщенная калиброванными нанитами, предназначенными для лечения внутренних травм и последствий передозировки гелем.</entitydescription.calibratedisonanitegel>
+
+  <!-- Чертежи -->
+  <entityname.bppsc>Схема сборки - Элемент ТХ</entityname.bppsc>
+  <entitydescription.bppsc>Чертёж для сборки Элемента тихого хода.</entitydescription.bppsc>
+  <entityname.bpprop>Схема сборки - Улучшенная турбина</entityname.bpprop>
+  <entitydescription.bpprop>Чертёж для улучшения струйных инструментов и средств передвижения.</entitydescription.bpprop>
+  <entityname.bpo2>Схема сборки - Портативный генератор кислорода</entityname.bpo2>
+  <entitydescription.bpo2>Чертёж для сборки портативного генератора кислорода.</entitydescription.bpo2>
+  <entityname.bpinv>Схема сборки - Расширение "Инвентарь"</entityname.bpinv>
+  <entitydescription.bpinv>Чертёж для добавления инвентарного модуля к водолазному скафандру.</entitydescription.bpinv>
+  <entityname.bpisotope>Схема сборки - Образование изотопов</entityname.bpisotope>
+  <entitydescription.bpisotope>Содержит набор параметров для получения изотопов в фабрикаторах.</entitydescription.bpisotope>
+  <entityname.bpdetonator>Схема сборки - Ящик-детонатор</entityname.bpdetonator>
+  <entitydescription.bpdetonator>Чертёж для сборки ящика-детонатора</entitydescription.bpdetonator>
+  <entityname.bpwetchip>Схема сборки - Гидроимпульсный элемент</entityname.bpwetchip>
+  <entitydescription.bpwetchip>Чертёж для сборки гидроимпульсного элемента.</entitydescription.bpwetchip>
+  <entityname.bpradio>Схема сборки - Радиоэлектроника</entityname.bpradio>
+  <entitydescription.bpdecoy>Чертёж для сборки радиоэлектронных устройств и компонентов.</entitydescription.bpdecoy>
+  <entityname.bpalienpower>Схема репликации - Инопланетные схемы питания</entityname.bpalienpower>
+  <entitydescription.bpalienpower>Чертёж для сборки предметов с инопланетными источниками питания</entitydescription.bpalienpower>
+  <entityname.bpbfg>Схема сборки - ОБГ</entityname.bpbfg>
+  <entitydescription.bpbfg>Чертёж для сборки грозосферного бластера и зарядных капсул.</entitydescription.bpbfg>
+  <entityname.bpnanite>Схема сборки - Наниты</entityname.bpnanite>
+  <entitydescription.bpnanite>Чертёж для создания колоний нанитов.</entitydescription.bpnanite>
+  <entityname.bpnaniteplus>Схема сборки - Калибровка нанитов</entityname.bpnaniteplus>
+  <entitydescription.bpnaniteplus>Схема, содержащая калибровочный код для нанитов медицинского применения.</entitydescription.bpnaniteplus>
+  
+  <!-- Оружие -->
+  <entityname.explosivenuke>Изотопный заряд</entityname.explosivenuke>
+  <entitydescription.explosivenuke>Взрывчатка на базе урана. Наносит огромный урон сооружениям и существам.</entitydescription.explosivenuke>
+  <entityname.explosivefrag>Осколочный заряд</entityname.explosivefrag>
+  <entitydescription.explosivefrag>Взрывчатка, содержащая металлические осколки. Предназначена в наибольшей степени для устранения существ.</entitydescription.explosivefrag>
+  <entityname.syringeammobox>Шприцевая боеукладка</entityname.syringeammobox>
+  <entitydescription.syringeammobox>Используется для зарядки шприцов в магнитную пушку.</entitydescription.syringeammobox>
+  <entityname.kinemagneticgun>Магнитный пистолет</entityname.kinemagneticgun>
+  <entitydescription.kinemagneticgun>Самодельное оружие для стрельбы дротиками или шприцами.</entitydescription.kinemagneticgun>
+  <entityname.irondart>Железный дротик</entityname.irondart>
+  <entityname.aluminiumdart>Алюминиевый дротик</entityname.aluminiumdart>
+  <entityname.chloroform>Хлороформ</entityname.chloroform>
+  <entitydescription.chloroform>Анестезирующее средство, постепенно накладывающее на цель сонливость.</entitydescription.chloroform>
+  <entityname.trackerhandcuffs>Наручники с трекером</entityname.trackerhandcuffs>
+  <entityname.fulguspheretube>Грозосферный тубус</entityname.fulguspheretube>
+  <entitydescription.fulguspheretube>Устройство для создания грозосфер.</entitydescription.fulguspheretube>
+  <entityname.bfgcell>Грозосферная капсула.</entityname.bfgcell>
+  <entitydescription.bfgcell>Источник питания для ОБГ.</entitydescription.bfgcell>
+  <entityname.fulgusphere>Грозосфера</entityname.fulgusphere>
+  <entitydescription.fulgusphere>Снаряд для рельсотрона.</entitydescription.fulgusphere>
+  <entityname.fulguspheresmall>Малая грозосфера</entityname.fulguspheresmall>
+  <entitydescription.fulguspheresmall>Снаряд для ОБГ.</entitydescription.fulguspheresmall>
+  <entityname.handhelddischarger>Ручное разрядное устройство</entityname.handhelddischarger>
+  <entitydescription.handhelddischarger>Самодельное оружие малой дистанции. Использует аккумуляторы для питания.</entitydescription.handhelddischarger>
+  <entityname.floatychargeshell>Плавучая бомба</entityname.floatychargeshell>
+  <entitydescription.floatychargeshell>Заряд для сброса с помощью пусковой трубы. Имеет нейтральную плавучесть.</entitydescription.floatychargeshell>
+  <entityname.nuclearfloatycharge>Ядерная плавучая бомба</entityname.nuclearfloatycharge>
+  <entitydescription.nuclearfloatycharge>Заряд для сброса с помощью пусковой трубы. Имеет нейтральную плавучесть и мощную взрывчатку.</entitydescription.nuclearfloatycharge>
+  <entityname.floatydecoyshell>Плавучая приманка</entityname.floatydecoyshell>
+  <entitydescription.floatydecoyshell>Заряд-приманка для сброса с помощью пусковой трубы. Имеет нейтральную плавучесть.</entitydescription.floatydecoyshell>
+  <entityname.nuclearfloatydecoy>Ядерная плавучая приманка</entityname.nuclearfloatydecoy>
+  <entitydescription.nuclearfloatydecoy>Заряд-приманка для сброса с помощью пусковой трубы. Имеет нейтральную плавучесть и мощную взрывчатку.</entitydescription.nuclearfloatydecoy>
+  <entityname.bfg>ОБГ 16.02</entityname.bfg>
+  <entitydescription.bfg>Опытный бластер грозосферного типа. Не применять в узких помещениях.</entitydescription.bfg>
+  <entityname.nailgun>Гвоздомёт</entityname.nailgun>
+  <entitydescription.nailgun>Скорострельное дальнее оружие, стреляющее небольшими гвоздями.</entitydescription.nailgun>
+  <entityname.ironnail>Железный гвоздь</entityname.ironnail>
+  <entityname.ironnailclip>Пачка с железными гвоздями</entityname.ironnailclip>
+  <entitydescription.ironnailclip>Используется как магазин для гвоздомёта.</entitydescription.ironnailclip>
+  <entityname.holyhandgrenade>Святая ручная граната</entityname.holyhandgrenade>
+  <entitydescription.holyhandgrenade>Да поразит врага нечестивого кара Господе.</entitydescription.holyhandgrenade>
+  <entityname.plasmaorb>Плазменная сфера (так я не понял ты зачем её вручную заспавнил?)</entityname.plasmaorb>
+  <entityname.o2cartridge>Кислородный картридж</entityname.o2cartridge>
+  <entitydescription.o2cartridge>Для использования в ионизаторе. Применяется как топливо для термобура.</entitydescription.o2cartridge>
+  
+  <!-- Табло на аванпостах -->
+  <outpost.rand>Приветствуем. Уровень кислорода: В норме. Напряжение: В норме. Уровень радиации: Ниже оптимального. Прогноз погоды на сегодня: Холодно и сыро.</outpost.rand>
+  <outpost.rand>Приветствуем вас на нашем аванпосте. Здесь вы можете посетить наш магазин или найти новых членов экипажа.</outpost.rand>
+  <outpost.rand>Напоминание для посетителей: не оставляйте мусор на полу - сохранение чистоты на аванпостах является вашим залогом здоровья.</outpost.rand>
+  <outpost.rand>В случае разгерментизации не паникуйте - это не поможет. Направляйтесь в сторону челнока, отправляющейся подлодки или убежища на верхних уровнях. Будьте бдительными и сохраняйте свою жизнь!</outpost.rand>
+  <outpost.rand>Чувствуете усталось после работы? Каждую субботу посещайте массажный салон на уровне -49.</outpost.rand>
+  
+  <!-- Контейнеры -->
+  <entityname.detonatorcratesealed>Запечатанный ящик</entityname.detonatorcratesealed>
+  <entitydescription.detonatorcratesealed>Контейнер с запечатанной крышкой. Его содержимое неизвестно и будет выяснено после вскрытия на месте назначения.</entitydescription.detonatorcratesealed>
+  <entityname.detonatorcrateloot>Запечатанный ящик-детонатор</entityname.detonatorcrateloot>
+  <entitydescription.detonatorcrateloot>Контейнер для переноски и подрыва взрывчатки с запечатанной крышкой.</entitydescription.detonatorcrateloot>
+  <entityname.metalcratesealed>Запечатанный ящик</entityname.metalcratesealed>
+  <entitydescription.metalcratesealed>Контейнер с запечатанной крышкой. Его содержимое неизвестно и будет выяснено после вскрытия на месте назначения.</entitydescription.metalcratesealed>
+  <entityname.artifactsealed>Запечатанный ящик</entityname.artifactsealed>
+  <entitydescription.artifactsealed>Контейнер с запечатанной крышкой. Его содержимое неизвестно и будет выяснено после вскрытия на месте назначения.</entitydescription.artifactsealed>
+  <!-- Миссии -->
+  <missionname.cargowetbombvolcn>Специальная доставка</missionname.cargowetbombvolcn>
+  <missiondescription.cargowetbombvolcn>[location1]: странный контейнер находился на складе уже несколько недель. [location2] может принять его за [reward] кредитов и проверить его содержимое.</missiondescription.cargowetbombvolcn>
+  <missionname.cargowetbombcn>Специальная доставка</missionname.cargowetbombcn>
+  <missiondescription.cargowetbombcn>[location1]: странный контейнер находился на складе уже несколько недель. [location2] может принять его за [reward] кредитов и проверить его содержимое.</missiondescription.cargowetbombcn>
+  <missionname.cargoheatcn>Специальная доставка</missionname.cargoheatcn>
+  <missiondescription.cargoheatcn>[location1]: странный контейнер находился на складе уже несколько недель. [location2] может принять его за [reward] кредитов и проверить его содержимое.</missiondescription.cargoheatcn>
+  <missionname.cargowetbombnuke>Специальная доставка</missionname.cargowetbombnuke>
+  <missiondescription.cargowetbombnuke>[location1]: странный контейнер находился на складе уже несколько недель. [location2] может принять его за [reward] кредитов и проверить его содержимое.</missiondescription.cargowetbombnuke>
+  <missionname.cargonitroglycerinsealed>Специальная доставка</missionname.cargonitroglycerinsealed>
+  <missiondescription.cargonitroglycerinsealed>[location1]: странный контейнер находился на складе уже несколько недель. [location2] может принять его за [reward] кредитов и проверить его содержимое.</missiondescription.cargonitroglycerinsealed>
+  <missionname.monsterminefield>Разминирование</missionname.monsterminefield>
+  <missiondescription.monsterminefield>[location1] уже долгое время получает известия о нахождении мин неизвестного типа, преграждающих путь в [location2]. Руководство предлагает [reward] кредитов за освобождение пещеры от взрывных устройств.</missiondescription.monsterminefield>
+  <missionname.monsterhandymen>Девиантное поведение</missionname.monsterhandymen>
+  <missiondescription.monsterhandymen>[location1] и [location2] сообщают о реактивации нескольких списанных дронов класса "Хендимен", проявляющих агрессию посреди транспортного пути между станциями. Аванпост выплачивает [reward] кредитов за устранение потенциальной угрозы.</missiondescription.monsterhandymen>
+  <missionsuccess.cargowetbombvolcn>[location2]: Вскрытие показало, что контейнер являлся детонатором, предназначенным для подрыва взрывчатки через некоторе время. Персонал оказался взволнован результатами проверки, однако платит вам [reward] кредитов в знак признательности за смелость.</missionsuccess.cargowetbombvolcn>
+  <missionsuccess.cargowetbombcn>[location2]: Вскрытие показало, что контейнер являлся детонатором, предназначенным для подрыва взрывчатки через некоторе время. Персонал оказался взволнован результатами проверки, однако платит вам [reward] кредитов в знак признательности за смелость.</missionsuccess.cargowetbombcn>
+  <missionsuccess.cargowetbombnuke>[location2]: Вскрытие показало, что контейнер являлся детонатором, предназначенным для подрыва взрывчатки через некоторе время. Персонал оказался взволнован результатами проверки, однако платит вам [reward] кредитов в знак признательности за смелость.</missionsuccess.cargowetbombnuke>
+  <missionsuccess.cargonitroglycerinsealed>[location2]: Вскрытие показало, что контейнер был наполнен нитроглицерином. Персонал взял груз и заплатил вам [reward] кредитов за доставку.</missionsuccess.cargonitroglycerinsealed>
+  <missionsuccess.cargonasonovsealed>[location2]: Вскрытие показало, что внутри находился артефакт неизвестного происхождения. Персонал отдал груз на дополнительную экспертизу и заплатил вам [reward] кредитов за доставку.</missionsuccess.cargonasonovsealed>
+  <missionsuccess.cargoheatcn>[location2]: Вскрытие показало, что контейнер являлся детонатором, предназначенным для подрыва взрывчатки через некоторе время. Персонал оказался взволнован результатами проверки, однако платит вам [reward] кредитов в знак признательности за смелость.</missionsuccess.cargoheatcn>
+  <missionsuccess.monsterminefield>Останки оболочек, найденные на месте, выдаваемом за минное поле, заинтересовали исследователей. Руководство передало образцы в ближайшую лабораторию и платит вам [reward] кредитов за расчистку пути сообщения.</missionsuccess.monsterminefield>
+  <missionsuccess.monsterhandymen>[location2]: руководство не спешило опрашивать вас касательно встречи с неисправными дронами, однако местный экипаж был заинтересован в причине возникшего девиантного поведения у машин. Персонал выплачивает вам [reward] кредитов за успешную расчистку пути.</missionsuccess.monsterhandymen>
+  <missionheader0.monsterminefield>Цель уничтожена</missionheader0.monsterminefield>
+  <missionmessage0.monsterminefield>Похоже, что взрывчатка была прикреплена к группе оболочек. Выведите подлодку из пещеры, чтобы получить награду.</missionmessage0.monsterminefield>
+  <missionsonarlabel.monsterminefield>Цель</missionsonarlabel.monsterminefield>
+  <missionheader0.monsterhandymen>Цель уничтожена</missionheader0.monsterhandymen>
+  <missionmessage0.monsterhandymen>Дроны были успешно деактивированы. Выведите подлодку из пещеры, чтобы получить награду.</missionmessage0.monsterhandymen>
+  <missionsonarlabel.monsterhandymen>Сигнал трекера ЕАК</missionsonarlabel.monsterhandymen>
+  
+  <!-- Эффекты -->
+  <afflictionname.drowsiness>Сонливость</afflictionname.drowsiness>
+  <afflictiondescription.drowsiness>Пациент испытывает нехватку сна - это видно по смыкающимся векам.</afflictiondescription.drowsiness>
+  <afflictionname.structinfection>Отравление изонанитовым гелем</afflictionname.structinfection>
+  <afflictiondescription.structinfection>Пациент тяжело дышит, словно пытаясь выплеснуть наружу некую вязкую жидкость.</afflictiondescription.structinfection>
+  
+  <uilabel.tape>Кассета</uilabel.tape>
+  <uilabel.gastanks>Газовые баллоны</uilabel.gastanks>
+  <uilabel.accesscontrolchip>Соединительный чип</uilabel.accesscontrolchip>
+  <roomname.rnd>Центр исследования и разработки</roomname.rnd>
+
+  <itemmsgreplacetapewrench>[[use]] Заменить кассету (Гаечный ключ)</itemmsgreplacetapewrench>
+  <itemmsgrestore>[[use]] Восстановить</itemmsgrestore>
+  <itemmsgoperate>[[use]] Управлять</itemmsgoperate>
+  <itemmsgdetach>[[select]] Отсоединить</itemmsgdetach>
+  
+  <character.demohusk>Оболочка-подрывник</character.demohusk>
+  <character.handyman>Робот класса "Подручный"</character.handyman>
+  <character.huntsman>Робот класса "Подручный"?</character.huntsman>
+  <character.handymanstruct>"Подручный"-таламус</character.handymanstruct>
+  
+  <displayname.bpradioheadset>Схема сборки - Радиоэлектроника (малая)</displayname.bpradioheadset>
+  <displayname.hydrogentankempty>Водородный баллон (пустой)</displayname.hydrogentankempty>
+  <displayname.bppropcutter>Схема сборки - Улучшенная турбина (малая)</displayname.bppropcutter>
+  <displayname.chloroformtankdisguised>Замаскированный баллон с хлороформом</displayname.chloroformtankdisguised>
+  <displayname.quickblasttank>Замаскированный взрыв-баллон</displayname.quickblasttank>
+  
+  <secrelay.activategeneric>Замкнуть цепь</secrelay.activategeneric>
+  <secrelay.activateweapons>Замкнуть цепь [ОРУЖ]</secrelay.activateweapons>
+  <secrelay.activateeng>Замкнуть цепь [ИНЖ]</secrelay.activateeng>
+  <secrelay.activatemed>Замкнуть цепь [МЕД]</secrelay.activatemed>
+  <secrelay.activatehelm>Замкнуть цепь [РУЛЬ]</secrelay.activatehelm>
+  <secrelay.activateomni>Замкнуть цепь [ОМНИ]</secrelay.activateomni>
+  <secrelay.deactivate>Разомнкуть цепь</secrelay.deactivate>
+  
+  <label.droneconnected>Режим переноса дрона</label.droneconnected>
+  <label.ballastequality>Уравнение балласта</label.ballastequality>
+  <label.shuttlebay>Доступ к челноку</label.shuttlebay>
+  <label.initiateoverdrive>Пуск ускорения</label.initiateoverdrive>
+  <label.drainoxygen>Выкачка кислорода</label.drainoxygen>
+  
+  <submarine.name.ironsailor>RG-11B "Железный Матрос"</submarine.name.ironsailor>
+  <submarine.description.ironsailor>Подлодки класса "Железный матрос", основанные на вышедшем в 2250 году прототипе от RG Transportation и добытых секретных чертежах "Новой Европы", наследуют от предшественников баланс между производительностью и сроком службы. Помимо обновлённого оборудования, подлодка получила новый челнок тяжёлого класса и обновлённую схему шахт доступа.</submarine.description.ironsailor>
+  <submarine.name.berilia_mark_ii>Бериллия, модель II</submarine.name.berilia_mark_ii>
+  <submarine.description.berilia_mark_ii>Бериллия - мощная, массивная и грозная подлодка. Лучшая в своем классе. Оснащена двумя двигателями и тремя балластными баками, для работы которых требуется не только внушительный объем энергии, но и большая команда. Для удобсвта экипажа были добавлены транспортные линии пневмопочты и осадный дрон для зачистки отдалённых территорий без риска.</submarine.description.berilia_mark_ii>
+  <submarine.name.typhon_tr>Тифон TR</submarine.name.typhon_tr>
+  <submarine.description.typhon_tr>Подлодки класса «Тифон» считаются очень надежными - они грозно выглядят и весьма достойно вооружены. Однако любой капитан знает, что в вопросах подъема и максимальной скорости они оставляют желать лучшего. Эта версия оборудована термоядерным реактором.</submarine.description.typhon_tr>
+  <submarine.name.btx_01_velocity>BTX-01 "Скороход"</submarine.name.btx_01_velocity>
+  <submarine.description.btx_01_velocity>Первое судно серии BTX, основные задачи которого состоят в патрулировании вод и защиты от мятежников. На борту имеется мощный двигатель, солидное вооружение и термоядерный реактор.</submarine.description.btx_01_velocity>
+  <submarine.name.sprinter>WH2-86 "Спринтер"</submarine.name.sprinter>
+  <submarine.description.sprinter>Будучи разработанными предположительно спившимся инженером, челноки класса "Спринтер" предназначены для быстрой доставки персонала и грузов к дальним локациям. Однако, отсутствие усиления корпуса и базового вооружения делает суда непригоднымы для сверхопасных локаций.</submarine.description.sprinter>
+  
+  <terminalwelcomemsg.shuttlerepairs>\nБАТИСКАФ "КАССИНИ-2"\nСер. номер: 6D:E29:539 RG12\n\n-- Корпус --\nССТ: 86%\nОптика: ВЫКЛ\nГидродин. элементы: Треб. обслуживание\n\n-- Питание --\nМощость системы: 0 кВт\nГлавные батареи: 0 кВт*мин (0%)\nОружейные конденсаторы: NaN (NaN%)\n\n-- Контроль верт. хода --\nСтатус балластной камеры: 77%\nСост насоса: Неизвестное загрязнение!\n\n-- Контроль гор. хода --\nСтатус двигателя: Не установлен\nТекущая мощность: 0 кВт\n\n-- Навигация --\nУправление: OK\nСонар: Неиспр. оборудования\n\n-- Оружие --\nХвостовая турель: Летна не подкл.\nДонная турель: Лента не подкл.\nТруба для сброса ГС: Откл.\n\n-- ЗАПУСК НЕДОСТУПЕН --\nРешение не найдено\n</terminalwelcomemsg.shuttlerepairs>
+  <terminalwelcomemsg.coalition>\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⣀⣤⣤⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠛⠿⣿⣿⣿⣿⣿⠿⠿⠛⠋⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣶⠆⠀⠸⣿⣿⣿⡇⠀⠀⢲⣦⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⡏⠀⠀⠀⢻⣿⣿⠀⠀⠀⠀⣿⣿⠿⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣇⠀⠀⠀⠈⣿⡇⠀⠀⠀⠀⣿⣅⡀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣆⠀⠀⠀⠸⠀⠀⠀⢀⣼⠿⠿⠇⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣷⣦⣤⣀⣀⣤⣶⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠟⠁⠈⢿⣿⠃⠀⠙⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\nСЕРВИСНАЯ КОНСОЛЬ, МОДЕЛЬ ТРИ\nСобственность Европанского Автоматизационного Комитета\n\nВведите нужную команду в поле внизу...\n</terminalwelcomemsg.coalition>
+</infotexts>

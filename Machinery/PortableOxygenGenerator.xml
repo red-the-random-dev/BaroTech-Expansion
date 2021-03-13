@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+  <Item name="" identifier="portableo2generator" scale="0.5" linkable="true" pickdistance="150" tags="rechargeable" impactsoundtag="impact_metal_heavy" category="Equipment">
+    <Sprite texture="PortableOxygenGenerator.png" depth="0.54" sourcerect="0,0,159,83" origin="0.5,0.5" />\
+    <BrokenSprite texture="PortableOxygenGenerator.png" sourcerect="159,0,159,83" depth="0.8" maxcondition="40" />
+    <BrokenSprite texture="PortableOxygenGenerator.png" sourcerect="318,0,159,83" depth="0.8" maxcondition="0" />
+    <Fabricate suitablefabricators="weldingtable" requiredtime="30">
+      <RequiredSkill identifier="mechanical" level="35" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="bpo2" mincondition="0.1" usecondition="true" />
+    </Fabricate>
+    <Body width="150" height="85" density="10" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="InWater" target="This" Condition="-0.1">
+        <RequiredItem identifier="oxygentank" type="Contained" />
+        <sound file="Content/Items/OxygenGenerator/OxygenGenerator.ogg" range="500" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" Condition="-0.1">
+        <RequiredItem identifier="hydrogentank" type="Contained" />
+        <sound file="Content/Items/OxygenGenerator/OxygenGenerator.ogg" range="500" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="Contained" Condition="+0.5" targetidentifier="oxygentank" />
+      <StatusEffect type="InWater" target="Contained" Condition="+1.0" targetidentifier="hydrogentank" />
+      <StatusEffect type="InWater" target="This" condition="0.0" setvalue="true">
+        <RequiredItem identifier="weldingfueltank" type="Contained" />
+        <Explosion range="300" flames="true" shockwave="true" sparks="false" structuredamage="0.0" force="10.0">
+          <Affiction identifier="burn" amount="20" />
+          <Affiction identifier="stun" amount="30" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="InWater" target="Contained" condition="0.0" setvalue="true" targetidentifiers="weldingfueltank" />
+    </Holdable>
+    <ItemContainer capacity="3" canbeselected="false" hideitems="true" showconditionincontainedstateindicator="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="1,70,107,31" />
+      <Containable identifiers="oxygentank,weldingfueltank,hydrogentank" />
+    </ItemContainer>
+  </Item>
+</Items>

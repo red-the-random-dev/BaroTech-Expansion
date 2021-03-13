@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" translatedname="English">
+  <!-- Loading screen tips -->
+  <loadingscreentip>Sealed bombs can be recognized by quiet clicking sound you can hear while holding container. Stay all ears while checking the cargo!</loadingscreentip>
+  <!-- Electronics -->
+  <entityname.psc>Power Saving Circuit</entityname.psc>
+  <entitydescription.psc>Gate array used as component in creation of power-efficient tools.</entitydescription.psc>
+  <entityname.audioprocessor>Audioprocessor</entityname.audioprocessor>
+  <entitydescription.audioprocessor>Sound emitter with function of note sheet playback.</entitydescription.audioprocessor>
+  <entityname.2rdock>2R Dock</entityname.2rdock>
+  <entitydescription.2rdock>Recharge+Repair station used to recharge items with builtin batteries or repair broken tools..</entitydescription.2rdock>
+  <entityname.hydrogengenerator>Hydrogen generator</entityname.hydrogengenerator>
+  <entitydescription.hydrogengenerator>A device used to refill hydrogen tanks.</entitydescription.hydrogengenerator>
+  <entityname.wetchip>Wetbomb trigger component</entityname.wetchip>
+  <entitydescription.wetchip>Used alongside with detonator crate content. This circuit detonates explosives after some delay upon being contacted with water.</entitydescription.wetchip>
+  <entityname.timerchip>Delay trigger component</entityname.timerchip>
+  <entitydescription.timerchip>Used alongside with detonator crate content. This circuit detonates explosives after some delay.</entitydescription.timerchip>
+  <entityname.heatchip>Overheating trigger component</entityname.heatchip>
+  <entitydescription.heatchip>Used alongside with detonator crate content. This circuit detonates explosives after some delay while being located out of water.</entitydescription.heatchip>
+  <entityname.lifechip>Biosigns-based trigger component</entityname.lifechip>
+  <entitydescription.lifechip>Used alongside with detonator crate content. This circuit detonates explosives after death of person carrying crate on their back.</entitydescription.lifechip>
+  <entityname.holdchip>Drop-off trigger component</entityname.holdchip>
+  <entitydescription.holdchip>Used alongside with detonator crate content. This circuit initiates 4 seconds detonation delay after crate was dropped out of character's inventory.</entitydescription.holdchip>
+  <entityname.announcerspeaker>Announcer speaker</entityname.announcerspeaker>
+  <entitydescription.announcerspeaker>Plays tape recording on activation.</entitydescription.announcerspeaker>
+  <entityname.smallbattery>Small battery</entityname.smallbattery>
+  <entitydescription.smallbattery>Generally used for storing backup power in case of a reactor failure or powering emergency automatics.</entitydescription.smallbattery>
+  <entityname.switchpanel>Switch panel</entityname.switchpanel>
+  <entitydescription.switchpanel>Has 5 customizable switches that can be connected to various sub sustems.</entitydescription.switchpanel>
+  <entityname.protectivefuse>Protective fuse</entityname.protectivefuse>
+  <entitydescription.protectivefuse>An element that protects power grid from overload damage.</entitydescription.protectivefuse>
+  <entityname.emergencysirenb>Emergency siren B</entityname.emergencysirenb>
+  <entitydescription.emergencysirenb>Plays evacuation alarm on activation.</entitydescription.emergencysirenb>
+  <entityname.textdisplaylarge>Wide Text Screen</entityname.textdisplaylarge>
+  <entityname.securityrelay>Security relay</entityname.securityrelay>
+  <entitydescription.securityrelay>Disruption component designated for secure control on electronic systems.</entitydescription.securityrelay>
+  <entityname.securityrelay_omni>Security relay // OMNI</entityname.securityrelay_omni>
+  <entitydescription.securityrelay_omni>Disruption component designated for secure control on electronic systems.\n[OMNI]</entitydescription.securityrelay_omni>
+  <entityname.bypassbutton>Bypass sensor</entityname.bypassbutton>
+  <entitydescription.bypassbutton>A button that sends signals if control chip with required access tag is swiped.</entitydescription.bypassbutton>
+  
+  <!-- Control chips -->
+  <entityname.acc_generic>Access Control Chip</entityname.acc_generic>
+  <entitydescription.acc_generic>Provides access to security relay control.</entitydescription.acc_generic>
+  <entityname.acc_omni>Access Control Chip // Omni</entityname.acc_omni>
+  <entitydescription.acc_omni>Provides access to most of standard-tagged security relay control.\n[OMNI] [WEAP] [HELM] [ENG] [MED]</entitydescription.acc_omni>
+   
+  <!-- Devices -->
+  <entityname.weldingtable>Welding table</entityname.weldingtable>
+  <entitydescription.weldingtable>A table with attached welding device used for creation of modified items.</entitydescription.weldingtable>
+  <entityname.printer>Printer</entityname.printer>
+  <entitydescription.printer>A device for printing documents or assembly schemes.</entitydescription.printer>
+  <entityname.surveillancemonitor3>Surveillance monitor</entityname.surveillancemonitor3>
+  <entityname.surveillancemonitor5>Surveillance monitor</entityname.surveillancemonitor5>
+  <entityname.surveillancemonitor7>Surveillance monitor</entityname.surveillancemonitor7>
+  <entitydescription.surveillancemonitor3>A device for monitoring cameras inside or outside the sub that has 3 linkable buttons.</entitydescription.surveillancemonitor3>
+  <entitydescription.surveillancemonitor5>A device for monitoring cameras inside or outside the sub that has 5 linkable buttons.</entitydescription.surveillancemonitor5>
+  <entitydescription.surveillancemonitor7>A device for monitoring cameras inside or outside the sub that has 7 linkable buttons.</entitydescription.surveillancemonitor7>
+  <entityname.portableo2generator>Portable oxygen generator</entityname.portableo2generator>
+  <entitydescription.portableo2generator>Device used for refilling oxygen tanks by use of water electrolysis.</entitydescription.portableo2generator>
+  <entityname.thermogenerator>Thermoelectrical generator</entityname.thermogenerator>
+  <entityname.fusionreactor>Thermonuclear reactor</entityname.fusionreactor>
+  <entityname.isotopeplate>Isotope plate</entityname.isotopeplate>
+  <entityname.thoriumisotopeplate>Thorium isotope plate</entityname.thoriumisotopeplate>
+  <entityname.incendiumisotopeplate>Incendium isotope plate</entityname.incendiumisotopeplate>
+  <entityname.detonatorcrate>Detonator Crate</entityname.detonatorcrate>
+  <entitydescription.detonatorcrate>Container for carrying and detonation of explosives.</entitydescription.detonatorcrate>
+  <entityname.radiotransreceiver>Radio Transreceiver</entityname.radiotransreceiver>
+  <entitydescription.radiotransreceiver>Device for broad range communications that has room for carrying 6 additional items.</entitydescription.radiotransreceiver>
+  <entityname.steelpostcabinet>Large Peumatic Post Cabinet</entityname.steelpostcabinet>
+  <entityname.posttray>Pneumatic Post Access tray</entityname.posttray>
+  <entitydescription.posttray>Device for transferring items by use of pipe post.</entitydescription.posttray>
+  <entityname.posttray_secure>Secure Pneumatic Post Tray</entityname.posttray_secure>
+  <entitydescription.posttray_secure>Device for transferring items by use of pipe post.</entitydescription.posttray_secure>
+  <entityname.overdriveengine>Overdrive Engine</entityname.overdriveengine>
+  <entitydescription.overdriveengine>A high revrate engine used to quickly achieve hgh speeds for short time.</entitydescription.overdriveengine>
+  <entityname.hppengine>HPP Engine</entityname.hppengine>
+  <entitydescription.hppengine>Hydrodynamic Pump-type Propulsion engine that drives the submarine by pumping water through the pipe.</entitydescription.hppengine>
+  <entityname.twostrokepump>Two-stroke pump</entityname.twostrokepump>
+  <entitydescription.twostrokepump>Powerful pump mainly used for buoyancy control.</entitydescription.twostrokepump>
+  <entityname.o2drainingduct>Oxygen Draining Duct</entityname.o2drainingduct>
+  <entityname.portablethermogenerator>Portable Thermoelectrical Generator</entityname.portablethermogenerator>
+  <entitydescription.portablethermogenerator>A device for powering closed-circuit power grids.</entitydescription.portablethermogenerator>
+  <entityname.largedepthchargeloader>Large Depth Charge Loader</entityname.largedepthchargeloader>
+  <entitydescription.largedepthchargeloader>A depth charge loader with 3 slots.</entitydescription.largedepthchargeloader>
+  <entityname.thermitecanister>Thermite Canister</entityname.thermitecanister>
+  <entitydescription.thermitecanister>A highly-flammable substance used to burn through hulls. Has built-in lightup system.</entitydescription.thermitecanister>
+  <entityname.thermaldrill>Thermal drill</entityname.thermaldrill>
+  <entitydescription.thermaldrill>Plasma beam drill that is mounted on ship. Has great structure damage and equally great consumption of power in process.</entitydescription.thermaldrill>
+  <entityname.thermaldrillionizer>Thermal drill ionizer</entityname.thermaldrillionizer>
+  <entitydescription.thermaldrillionizer>Ammunition source for thermal drill.</entitydescription.thermaldrillionizer>
+  <entityname.pilotseat>Pilot Seat</entityname.pilotseat>
+  <entitydescription.pilotseat>Device that can be used for steering while being able to receive video feed from cameras installed on vessel.</entitydescription.pilotseat>
+  
+  <!-- Enhanced tools -->
+  <entityname.underwaterscooterii>Underwater Scooter II</entityname.underwaterscooterii>
+  <entitydescription.underwaterscooterii>A battery-powered underwater propulsion device with power saving circuits installed.</entitydescription.underwaterscooterii>
+  <entityname.underwaterscooteriii>Underwater Scooter III</entityname.underwaterscooteriii>
+  <entitydescription.underwaterscooteriii>A battery-powered underwater propulsion device with power efficiency circuit and enhanced torque rotors installed.</entitydescription.underwaterscooteriii>
+  <entityname.divingsuitinv>Inventory-upgraded Diving Suit</entityname.divingsuitinv>
+  <entitydescription.divingsuitinv>An atmospheric diving suit with several items slots capable of withstanding the immense pressure under Europa's crust.</entitydescription.divingsuitinv> 
+  <entityname.heavysuit>Heavy Diving Suit</entityname.heavysuit>
+  <entitydescription.heavysuit>Specially-modified reinforced version of diving apparatus. Can survive higher pressure and more brutal attacks.</entitydescription.heavysuit>
+  <entityname.hydrogentank>Hydrogen Tank</entityname.hydrogentank>
+  <entitydescription.hydrogentank>Portable hydrogen tank used in nuclear fusion reactions.</entitydescription.hydrogentank>
+  <entityname.deuteriumtank>Deuterium Tank</entityname.deuteriumtank>
+  <entitydescription.deuteriumtank>A portable deuterium tank that creates higher power output during fusion reactions and has higher durability.</entitydescription.deuteriumtank>
+  <entityname.plasmacutter_high>High-Intensity Plasma Cutter</entityname.plasmacutter_high>
+  <entitydescription.plasmacutter_high>Cuts through various materials using a jet of ionized oxygen or other gas.</entitydescription.plasmacutter_high>
+  
+  <!-- Materials -->
+  <entityname.paper>Paper</entityname.paper>
+  <entitydescription.paper>A thin sheet of A4 format used by printer.</entitydescription.paper>
+  <entityname.adrenogen>Adrenogen</entityname.adrenogen>
+  <entitydescription.adrenogen>A strong chem that neutralizes drowsiness.</entitydescription.adrenogen>
+  <entityname.ethylzine>Ethylzine</entityname.ethylzine>
+  <entitydescription.ethylzine>A mixture of ethanol and hyperzine. Causes strong disorientation.</entitydescription.ethylzine>
+  <entityname.isonanitegel>Isonanite Gel</entityname.isonanitegel>
+  <entitydescription.isonanitegel>A plasmoid substance containing nanites, which is used to repair internal damage. Avoid overdosing!</entitydescription.isonanitegel>
+  <entityname.calibratedisonanitegel>Calibrated Isonanite Gel</entityname.calibratedisonanitegel>
+  <entitydescription.calibratedisonanitegel>A plasmoid substance containing recalibrated nanites, which is used to repair internal damage and cure consequences of gel overdose.</entitydescription.calibratedisonanitegel>
+
+  <!-- Blueprints -->
+  <entityname.bppsc>Assembly scheme - PSC</entityname.bppsc>
+  <entitydescription.bppsc>Blueprint for assembly of Power Saving Circuit.</entitydescription.bppsc>
+  <entityname.bpprop>Assembly scheme - Enhanced propulsion</entityname.bpprop>
+  <entitydescription.bpprop>Blueprint used for upgrading jetstream tools or locomotion devices.</entitydescription.bpprop>
+  <entityname.bpo2>Assembly scheme - Portable oxygen generator</entityname.bpo2>
+  <entitydescription.bpo2>Blueprint used to assemble portable oxygen generator.</entitydescription.bpo2>
+  <entityname.bpinv>Assembly scheme - Inventory expansion</entityname.bpinv>
+  <entitydescription.bpinv>Blueprint used to create diving suit with inventory module.</entitydescription.bpinv>
+  <entityname.bpisotope>Assembly scheme - Isotope fabrication</entityname.bpisotope>
+  <entitydescription.bpisotope>Blueprint containing set of parameters for synthesis of isotopes in fabricators.</entitydescription.bpisotope>
+  <entityname.bpdetonator>Assembly scheme - Detonator Crate</entityname.bpdetonator>
+  <entitydescription.bpdetonator>Blueprint for detonator crate assembly</entitydescription.bpdetonator>
+  <entityname.bpwetchip>Assembly scheme - Wetbomb trigger component</entityname.bpwetchip>
+  <entitydescription.bpwetchip>Blueprint for assembly of wetbomb trigger component.</entitydescription.bpwetchip>
+  <entityname.bpradio>Assembly scheme - Radioelectronics</entityname.bpradio>
+  <entitydescription.bpdecoy>Blueprints for assembly of radioelectronic devices and components.</entitydescription.bpdecoy>
+  <entityname.bpalienpower>Replication scheme - Alien power sources</entityname.bpalienpower>
+  <entitydescription.bpalienpower>Blueprint for assembly of items powered by alien power sources.</entitydescription.bpalienpower>
+  <entityname.bpbfg>Assembly scheme - BFG</entityname.bpbfg>
+  <entitydescription.bpbfg>Blueprint used for assembly of fulgusphere blaster and fulgurium cells.</entitydescription.bpbfg>
+  <entityname.bpnanite>Assembly scheme - Nanites</entityname.bpnanite>
+  <entitydescription.bpnanite>Blueprint for creation of nanite colonies.</entitydescription.bpnanite>
+  <entityname.bpnaniteplus>Assembly scheme - Nanite calibration</entityname.bpnaniteplus>
+  <entitydescription.bpnaniteplus>Schematics with calibration data for nanites dedicated for medical use.</entitydescription.bpnaniteplus>
+  
+  <!-- Weapons -->
+  <entityname.explosivenuke>Nuclear Payload</entityname.explosivenuke>
+  <entitydescription.explosivenuke>Uranium propelled explosive with high blast radius.</entitydescription.explosivenuke>
+  <entityname.explosivefrag>Frag Charge</entityname.explosivefrag>
+  <entitydescription.explosivefrag>An explosive that consists of metal fragments mainly used to eliminate creatures.</entitydescription.explosivefrag>
+  <entityname.syringeammobox>Syringe Ammunition Loader</entityname.syringeammobox>
+  <entitydescription.syringeammobox>Used to charge coilgun with syringes.</entitydescription.syringeammobox>
+  <entityname.kinemagneticgun>Gauss Handgun</entityname.kinemagneticgun>
+  <entitydescription.kinemagneticgun>Makeshift weapon that fires syringes or metal darts.</entitydescription.kinemagneticgun>
+  <entityname.irondart>Iron Dart</entityname.irondart>
+  <entityname.aluminiumdart>Aluminium Dart</entityname.aluminiumdart>
+  <entityname.chloroform>Chloroform</entityname.chloroform>
+  <entitydescription.chloroform>Anestesic chem that applies drowsiness on target.</entitydescription.chloroform>
+  <entityname.trackerhandcuffs>Tracker Handcuffs</entityname.trackerhandcuffs>
+  <entityname.fulguspheretube>Fulgusphere Shell</entityname.fulguspheretube>
+  <entitydescription.fulguspheretube>Fulgusphere creation device.</entitydescription.fulguspheretube>
+  <entityname.bfgcell>Fulgusphere Cell</entityname.bfgcell>
+  <entitydescription.bfgcell>BFG power source.</entitydescription.bfgcell>
+  <entityname.fulgusphere>Fulgusphere</entityname.fulgusphere>
+  <entitydescription.fulgusphere>A railgun projectile.</entitydescription.fulgusphere>
+  <entityname.fulguspheresmall>Small Fulgusphere</entityname.fulguspheresmall>
+  <entitydescription.fulguspheresmall>BFG projectile.</entitydescription.fulguspheresmall>
+  <entityname.handhelddischarger>Handheld Discharger</entityname.handhelddischarger>
+  <entitydescription.handhelddischarger>Makeshift short distance weapon that uses batteries to work.</entitydescription.handhelddischarger>
+  <entityname.floatychargeshell>Floaty Charge Shell</entityname.floatychargeshell>
+  <entitydescription.floatychargeshell>A barrel of explosives dropped off by depth charge tube. Remains floating until impact with enemy.</entitydescription.floatychargeshell>
+  <entityname.nuclearfloatycharge>Nuclear Floaty Charge</entityname.nuclearfloatycharge>
+  <entitydescription.nuclearfloatycharge>A barrel of really big explosives dropped off by depth charge tube. Remains floating until impact with enemy.</entitydescription.nuclearfloatycharge>
+  <entityname.floatydecoyshell>Floaty Decoy Shell</entityname.floatydecoyshell>
+  <entitydescription.floatydecoyshell>A decoy that can be deployed via the depth charge launcher. Will float while producing a loud acoustic signal to attract attention away from the sub.</entitydescription.floatydecoyshell>
+  <entityname.nuclearfloatydecoy>Nuclear Floaty Decoy</entityname.nuclearfloatydecoy>
+  <entitydescription.nuclearfloatydecoy>A decoy that can be deployed via the depth charge launcher. Will float while producing a loud acoustic signal to attract attention away from the sub.</entitydescription.nuclearfloatydecoy>
+  <entityname.bfg>BFG 16.02</entityname.bfg>
+  <entitydescription.bfg>Blaster-type Fulgusphere Generator. Not for use in tight locations.</entitydescription.bfg>
+  <entityname.nailgun>Nailgun</entityname.nailgun>
+  <entitydescription.nailgun>Makeshift ranged weapons that fires nails.</entitydescription.nailgun>
+  <entityname.ironnailclip>Iron Nail Clip</entityname.ironnailclip>
+  <entitydescription.ironnailclip>Used as nailgun ammo.</entitydescription.ironnailclip>
+  <entityname.holyhandgrenade>Holy Hand Grenade</entityname.holyhandgrenade>
+  <entitydescription.holyhandgrenade>Pie jesu domine dona eis requiem.</entitydescription.holyhandgrenade>
+  <entityname.plasmaorb>Plasma Orb</entityname.plasmaorb>
+  <entityname.o2cartridge>Oxygen cartridge</entityname.o2cartridge>
+  <entitydescription.o2cartridge>Used by ionizer to supply thermal drill with plasma flow.</entitydescription.o2cartridge>
+  
+  <!-- Outpost labels -->
+  <outpost.rand>Welcome. Oxygen Levels: Nominal. Power Levels: Nominal. Radiation Levels: Suboptimal. Weather Forecast For Today: Cold and Damp.</outpost.rand>
+  <outpost.rand>Welcome to our outpost. Here you can visit our supplies shop or seek for new adventurers to sail with you.</outpost.rand>
+  <outpost.rand>A friendly reminder to our visitors: please do not drop garbage on floor - keeping outposts clean is a key for your health.</outpost.rand>
+  <outpost.rand>In case of hull breach don't panic - it won't help. The only thing that may help is boarding nearest submarine or shuttle or climbing up to colony in order to seek for proper shelter. Stay alive! Stay vigilant!</outpost.rand>
+  <outpost.rand>Feel exhausted at work? Visit our massage salon every saturday on level -49.</outpost.rand>
+  
+  <!-- Shipment containers -->
+  <entityname.detonatorcratesealed>Sealed container</entityname.detonatorcratesealed>
+  <entitydescription.detonatorcratesealed>A locked container with unknown contents that will be revealed after security check.</entitydescription.detonatorcratesealed>
+  <entityname.detonatorcrateloot>Sealed Detonator Crate</entityname.detonatorcrateloot>
+  <entitydescription.detonatorcrateloot>A locked container designed for some sort of... suicide attack?</entitydescription.detonatorcrateloot>
+  <entityname.metalcratesealed>Sealed container</entityname.metalcratesealed>
+  <entitydescription.metalcratesealed>A locked container with unknown contents that will be revealed after security check..</entitydescription.metalcratesealed>
+  <entityname.artifactsealed>Sealed container</entityname.artifactsealed>
+  <entitydescription.artifactsealed>A locked container with unknown contents that will be revealed after security check..</entitydescription.artifactsealed>
+  
+  <!-- Display names and UI labels -->
+  <uilabel.tape>Tape Slot</uilabel.tape>
+  <uilabel.gastanks>Gas tanks</uilabel.gastanks>
+  <uilabel.accesscontrolchip>Access Control Chip</uilabel.accesscontrolchip>
+  <roomname.rnd>RND Compartment</roomname.rnd>
+  <itemmsgreplacetapewrench>[[use]] Replace tape (Wrench)</itemmsgreplacetapewrench>
+  <itemmsgrestore>[[use]] Restore</itemmsgrestore>
+  <itemmsgoperate>[[use]] Operate</itemmsgoperate>
+  <itemmsgdetach>[[select]] Detach</itemmsgdetach>
+  
+  <secrelay.activategeneric>Patch through</secrelay.activategeneric>
+  <secrelay.activateweapons>Patch through [WEAP]</secrelay.activateweapons>
+  <secrelay.activateeng>Patch through [ENG]</secrelay.activateeng>
+  <secrelay.activatemed>Patch through [MED]</secrelay.activatemed>
+  <secrelay.activatehelm>Patch through [HELM]</secrelay.activatehelm>
+  <secrelay.activateomni>Patch through [OMNI]</secrelay.activateomni>
+  <secrelay.deactivate>Disrupt</secrelay.deactivate>
+  
+  <label.droneconnected>Drone connected</label.droneconnected>
+  <label.ballastequality>Ballast equality</label.ballastequality>
+  <label.shuttlebay>Shuttle access</label.shuttlebay>
+  <label.initiateoverdrive>Initiate Overdrive</label.initiateoverdrive>
+  
+  <displayname.bpradioheadset>Radio Electronics Assembly Scheme (small)</displayname.bpradioheadset>
+  <displayname.hydrogentankempty>Hydrogen Tank (empty)</displayname.hydrogentankempty>
+  <displayname.bppropcutter>Jet Propulsion Upgrade Scheme (small)</displayname.bppropcutter>
+  <displayname.chloroformtankdisguised>Disguised Chloroform Tank</displayname.chloroformtankdisguised>
+  <displayname.quickblasttank>Disguised Quick-blast tank</displayname.quickblasttank>
+  
+  <!-- Submarine info -->
+  <submarine.name.ironsailor>RG-11B "Iron Sailor"</submarine.name.ironsailor>
+  <submarine.description.ironsailor>Based on the prototype assembled by RG Transportation in year 2250 and secret New Europa blueprints, "Iron Sailor" class submarines inherit the balance between performance and durability. Besides the updated equipment, the submarine has received a new heavy-type shuttle and reworked access shaft layout.</submarine.description.ironsailor>
+  <submarine.name.berilia_mark_ii>Berilia Mark II</submarine.name.berilia_mark_ii>
+  <submarine.description.berilia_mark_ii>Berilia is top of the line when it comes to mass and firepower. Its two engines and three ballasts require a copious amount of power to operate and keeping the machinery in condition is a handful for even a moderately large crew. Hovewer, upgraded version has a large pipe transport system that can be used to reduce maintenance difficulty and a turret pod for storming the far areas without extra risks.</submarine.description.berilia_mark_ii>
+  <submarine.name.typhon_tr>Typhon TR</submarine.name.typhon_tr>
+  <submarine.description.typhon_tr>Typhon class subs are known for their brutish appearance, reasonable array of light and heavy firepower, and their general dependability. Any captain should be aware of their poor rate of descent and unimpressive top speed. The upgraded version got equipped with Thermonuclear Reactor.</submarine.description.typhon_tr>
+  <submarine.name.btx_01_velocity>BTX-01 "Velocity"</submarine.name.btx_01_velocity>
+  <submarine.description.btx_01_velocity>The first vessel of BTX series, which purpose is area petrol and rebel confrontation. It features powerful engine, average-level firepower and thermonuclear reactor.</submarine.description.btx_01_velocity>
+  <submarine.name.sprinter>WH-86 "Sprinter"</submarine.name.sprinter>
+  <submarine.description.sprinter>Being designed by some engineer with heavy ethylic drunkness, Sprinter-class shuttles are designed for speed delivery of personnel or resources to the far locations. Hovewer, it has no weaponry or hull enforcements so it's unrecommended for use in extremely dangerous locations.</submarine.description.sprinter>
+  
+  <!-- Character names -->
+  <character.demohusk>Husk Kamikaze</character.demohusk>
+  <character.handyman>Handyman Unit</character.handyman>
+  <character.huntsman>Handyman Unit?</character.huntsman>
+  <character.handymanstruct>Handy Husk</character.handymanstruct>
+  
+  <!-- Terminal messages -->
+  <terminalwelcomemsg.shuttlerepairs>BATHYSCAPHE "CASSINI mk.II"\nVIN: 6D:E29:539 RG12\n\n-- Outer shell --\nCND: 86%\nLighting: Disconnected\nHydrodynamic elements: Maintenance required\n\n-- Power systems --\nPower flow: 0 kW\nPrimary batteries: 0 kW*m (0%)\nWeapon capacitors: NaN (NaN%)\n\n-- Vertical mobility equipment --\nBallast chamber condition: 77%\nPump status: Unknown contaminant detected!\n\n-- Horizontal mobility equipment --\nEngine status: Unmounted\nPower flow: 0 kW\n\n-- Navigation --\nControllers: OK\nSonar: Unknown hardware error\n\n-- Weaponry --\nTail turret status: No ammo connected\nBilge turret status: No ammo connected\nDepth charge tube: Offline\n\n-- DISENGAGEMENT UNAVAILABLE --\nSolution not found\n</terminalwelcomemsg.shuttlerepairs>
+  <terminalwelcomemsg.coalition>\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⣀⣤⣤⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠛⠿⣿⣿⣿⣿⣿⠿⠿⠛⠋⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣶⠆⠀⠸⣿⣿⣿⡇⠀⠀⢲⣦⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⡏⠀⠀⠀⢻⣿⣿⠀⠀⠀⠀⣿⣿⠿⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣇⠀⠀⠀⠈⣿⡇⠀⠀⠀⠀⣿⣅⡀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣆⠀⠀⠀⠸⠀⠀⠀⢀⣼⠿⠿⠇⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣷⣦⣤⣀⣀⣤⣶⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠟⠁⠈⢿⣿⠃⠀⠙⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\nSERVICE CONSOLE MODEL 3\nProperty of Europan Automatization Commission\n\nStart typing required command in line below...</terminalwelcomemsg.coalition>
+</infotexts>

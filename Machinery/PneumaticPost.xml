@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+  <Item name="" identifier="steelpostcabinet" tags="cabinet,pipepost" linkable="true" allowedlinks="fabricator,deconstructor,weldingtable,printer,posttray,assemblydevice" pickdistance="150" scale="0.5">
+    <Sprite texture="PneumaticPostContainer.png" depth="0.84" sourcerect="0,0,450,371" origin="0.5,0.5" />
+    <ItemContainer capacity="30" slotsperrow="6" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.3,0.45" anchor="Center" style="ItemUI" />
+      <AlternativeLayout absoluteoffset="15,0"/>
+      <Containable identifiers="smallitem,mediumitem" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="posttray" category="Machine" tags="pipepost" linkable="true" allowedlinks="pipepost,posttray" disableitemusagewhenselected="false" scale="0.5" isshootable="true" requireaimtouse="false" requireaimtosecondaryuse="false">
+    <Sprite texture="PneumaticPostTray.png" depth="0.5" sourcerect="0,0,137,128" origin="0.5,0.5" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.15,0.15" anchor="Center" style="ItemUI" />
+      <AlternativeLayout absoluteoffset="0,15"/>
+      <Containable identifiers="smallitem,mediumitem" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="posttray_secure" category="Machine" tags="pipepost" linkable="true" allowedlinks="pipepost,posttray" disableitemusagewhenselected="false" scale="0.5" isshootable="true" requireaimtouse="false" requireaimtosecondaryuse="false">
+    <Sprite texture="PneumaticPostTray.png" depth="0.5" sourcerect="137,0,137,128" origin="0.5,0.5" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="MsgUnauthorizedAccess" />
+      <GuiFrame relativesize="0.15,0.15" anchor="Center" style="ItemUI" />
+      <AlternativeLayout absoluteoffset="0,15"/>
+      <Containable identifiers="smallitem,mediumitem" />
+    </ItemContainer>
+  </Item>
+</Items>

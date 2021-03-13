@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+  <Chloroform name="" identifier="chloroform" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.2" impactsoundtag="impact_metal_light">
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="16">
+      <RequiredSkill identifier="medical" level="35" />
+      <RequiredItem identifier="carbon" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="hydrogentank" mincondition="0.251" usecondition="true" />
+      <RequiredItem identifier="chlorine" /> 
+    </Fabricate>
+    <!-- TODO: Add inventory icon -->
+    <Sprite texture="Mods/BaroTech Expansion - Unstable/Medical/Chems.png" sourcerect="0,0,61,141" depth="0.6" origin="0.5,0.5" />
+    <Body width="60" height="140" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect tags="medical" type="OnUse" target="This" Condition="-50.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnUse" target="Character" duration="5.0">
+        <Affliction identifier="drowsiness" amount="4.0" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect tags="medical" type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnUse" target="Character" delay="3.0" duration="5.0">
+        <Affliction identifier="drowsiness" amount="15.6" />
+      </StatusEffect>
+    </Projectile>
+  </Chloroform>
+  <Adrenogen name="" identifier="adrenogen" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.2" impactsoundtag="impact_metal_light">
+    <SuitableTreatment identifier="drowsiness" suitability="100" />
+    <SuitableTreatment identifier="stun" suitability="60" />
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="10">
+      <RequiredSkill identifier="medical" level="30" />
+      <RequiredItem identifier="meth" />
+      <RequiredItem identifier="stabilozine" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="388,768,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/CraftingElements2.png" sourcerect="87,0,61,141" depth="0.6" origin="0.5,0.5" />
+    <Body width="60" height="140" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect tags="medical" type="OnUse" target="This" Condition="-50.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnUse" target="Character" delay="5" duration="5.0">
+        <ReduceAffliction identifier="drowsiness" amount="3" />
+        <ReduceAffliction identifier="stun" amount="2" />
+        <Affliction identifier="haste" amount="5" />
+        <Affliction identifier="strengthen" amount="3" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect tags="medical" type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnUse" target="Character" delay="5" duration="5.0">
+        <ReduceAffliction identifier="drowsiness" amount="6" />
+        <ReduceAffliction identifier="stun" amount="4" />
+        <Affliction identifier="haste" amount="10" />
+        <Affliction identifier="strengthen" amount="6" />
+      </StatusEffect>
+    </Projectile>
+  </Adrenogen>
+  <Ethylzine name="" identifier="ethylzine" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.2" impactsoundtag="impact_metal_light">
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="16">
+      <RequiredSkill identifier="medical" level="35" />
+      <RequiredItem identifier="ethanol" mincondition="0.5" usecondition="true" />
+      <RequiredItem identifier="hyperzine" mincondition="0.5" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,768,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Materials/CraftingElements2.png" sourcerect="162,0,75,143" depth="0.6" origin="0.5,0.5" />
+    <Body width="75" height="143" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect tags="medical" type="OnUse" target="This" Condition="-25.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" duration="5.0">
+        <Affliction identifier="drunk" amount="0.5" />
+        <Affliction identifier="invertcontrols" amount="1" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect tags="medical" type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" duration="5.0">
+        <Affliction identifier="drunk" amount="2" />
+        <Affliction identifier="invertcontrols" amount="4" />
+        <ReduceAffliction identifier="structinfection" amount="3" />
+      </StatusEffect>
+    </Projectile>
+  </Ethylzine>
+  <IsonaniteGel name="" identifier="isonanitegel" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" useinhealthinterface="true" scale="0.2" impactsoundtag="impack_metal_light">
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="16">
+      <RequiredSkill identifier="medical" level="35" />
+      <RequiredItem identifier="titanium" mincondition="0.5" usecondition="true" />
+      <RequiredItem identifier="ethanol" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="bpnanite" mincondition="0.2" usecondition="true" />
+    </Fabricate>
+    <Sprite texture="Mods/BaroTech Expansion - Unstable/Medical/Chems.png" sourcerect="61,0,61,141" depth="0.6" origin="0.5,0.5" />
+    <Body width="75" height="143" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect tags="medical" type="OnUse" target="This" Condition="-25.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnFailure" target="This" Condition="-25.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" duration="5.0">
+        <ReduceAffliction identifier="damage" amount="1.75" />
+        <Affliction identifier="structinfection" amount="0.2" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Character" duration="5.0">
+        <ReduceAffliction identifier="damage" amount="0.65" />
+        <Affliction identifier="structinfection" amount="1.8" />
+      </StatusEffect>
+      <RequiredSkill identifier="medical" level="45" />
+    </MeleeWeapon>
+  </IsonaniteGel>
+  <CalibratedIsonaniteGel name="" identifier="calibratedisonanitegel" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" useinhealthinterface="true" scale="0.2" impactsoundtag="impack_metal_light">
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="16">
+      <RequiredSkill identifier="medical" level="45" />
+      <RequiredItem identifier="isonanitegel" />
+      <RequiredItem identifier="stabilozine" mincondition="0.5" usecondition="true" />
+      <RequiredItem identifier="bpnaniteplus" mincondition="0.2" usecondition="true" />
+    </Fabricate>
+    <Sprite texture="Mods/BaroTech Expansion - Unstable/Medical/Chems.png" sourcerect="122,0,61,141" depth="0.6" origin="0.5,0.5" />
+    <Body width="75" height="143" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect tags="medical" type="OnUse" target="This" Condition="-25.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnFailure" target="This" Condition="-25.0" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" duration="5.0">
+        <ReduceAffliction identifier="damage" amount="2.25" />
+        <ReduceAffliction identifier="bloodloss" amount="0.5" />
+        <ReduceAffliction identifier="structinfection" amount="1.4" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Character" duration="5.0">
+        <ReduceAffliction identifier="damage" amount="1.15" />
+        <ReduceAffliction identifier="bloodloss" amount="0.25" />
+      </StatusEffect>
+      <RequiredSkill identifier="medical" level="45" />
+    </MeleeWeapon>
+  </CalibratedIsonaniteGel>
+</Items>

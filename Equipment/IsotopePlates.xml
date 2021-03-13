@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+	<Item
+ name="" identifier="isotopeplate" Tags="smallitem,thermalplate,reactorfuel" cargocontaineridentifier="metalcrate" scale="0.5">
+    
+    	<Price locationtype="Military" buyprice="100"/>
+    	<Price locationtype="Research" buyprice="100"/>
+    	<Price locationtype="City" buyprice="150"/>
+    	<Price locationtype="Outpost" buyprice="200"/>
+    	<Price locationtype="Mine" buyprice="200" />
+    
+    	<Deconstruct time="10">
+      		<Item identifier="steel"/>
+    		<Item identifier="uranium" mincondition="0.5"/>
+    	</Deconstruct>
+	<Fabricate suitablefabricators="weldingtable" requiredtime="10">
+      		<RequiredItem identifier="uranium"/>
+      		<RequiredItem identifier="steel"/>
+      		<RequiredItem identifier="bpisotope" mincondition="0.1" usecondition="true" />
+    	</Fabricate>
+    	<Sprite texture="Mods/BaroTech Expansion - Unstable/Equipment/IsotopePlates.png" depth="0.55" sourcerect="0,0,32,40"/>
+	<InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" depth="0.55" sourcerect="0,64,64,64"/>
+
+    	<Body width="32" height="40" density="5"/>
+    	<Holdable handle1="16,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect"/>
+    </Item>
+    
+    <Item
+ name="" identifier="thoriumisotopeplate" Tags="smallitem,thermalplate,reactorfuel" cargocontaineridentifier="metalcrate" scale="0.5" health="150">
+    
+    	<Deconstruct time="10">
+      		<Item identifier="steel"/>
+    		<Item identifier="thorium" mincondition="0.5"/>
+    	</Deconstruct>
+	<Fabricate suitablefabricators="weldingtable" requiredtime="10">
+      		<RequiredItem identifier="thorium"/>
+      		<RequiredItem identifier="steel"/>
+      		<RequiredItem identifier="bpisotope" mincondition="0.1" usecondition="true" />
+    	</Fabricate>
+    	<Sprite texture="Mods/BaroTech Expansion - Unstable/Equipment/IsotopePlates.png" depth="0.55" sourcerect="0,40,32,40"/>
+	<InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" depth="0.55" sourcerect="64,64,64,64"/>
+    	<Body width="32" height="40" density="5"/>
+
+    	<Holdable handle1="16,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect"/>
+    </Item>
+    
+    <Item
+ name="" identifier="incendiumisotopeplate" Tags="smallitem,thermalplate,reactorfuel" cargocontaineridentifier="metalcrate" scale="0.5" health="200">
+    
+    	<Deconstruct time="10">
+      		<Item identifier="steel"/>
+    		<Item identifier="incendium" mincondition="0.5"/>
+    	</Deconstruct>
+	<Fabricate suitablefabricators="weldingtable" requiredtime="10">
+      		<RequiredItem identifier="incendium"/>
+      		<RequiredItem identifier="steel"/>
+      		<RequiredItem identifier="bpisotope" mincondition="0.1" usecondition="true" />
+    	</Fabricate>
+    	<Sprite texture="Mods/BaroTech Expansion - Unstable/Equipment/IsotopePlates.png" depth="0.55" sourcerect="0,80,32,40"/>
+	<InventoryIcon texture="Mods/BaroTech Expansion - Unstable/InventoryIconAtlas.png" depth="0.55" sourcerect="128,64,64,64"/>
+    	<Body width="32" height="40" density="5"/>
+
+    	<Holdable handle1="16,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect"/>
+    </Item>
+</Items>

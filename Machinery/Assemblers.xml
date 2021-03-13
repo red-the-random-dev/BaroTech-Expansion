@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item
+      name=""
+      identifier="weldingtable"
+      category="Machine"
+      linkable="true"
+    allowedlinks="deconstructor,cabinet"
+    scale="0.5">
+
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+    <Sprite texture="Mods/BaroTech Expansion - Unstable/Machinery/WeldingTable.png" sourcerect="0,0,285,368" depth="0.8"/>
+
+    <Fabricator canbeselected="true" powerconsumption="500.0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.3,0.6" maxsize="600,1000" style="ItemUI" anchor="Center"/>
+      <AlternativeLayout absoluteoffset="15,0"/>
+      <sound file="Content/Items/Tools/WeldingLoop.ogg" type="OnActive" range="1000.0" loop="true"/>
+      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
+    </Fabricator>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
+      <RequiredItem identifier="screwdriver" type="Equipped"/>
+      <input name="power_in" displayname="connection.powerin"/>
+    </ConnectionPanel>
+
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" ShowRepairUIThreshold="50" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,216" anchor="Center" relativeoffset="0.1,0.27" style="ItemUI"/>
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem identifier="wrench" type="Equipped" />
+	    <ParticleEmitter particle="spark" particleamount="10" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="25.0"/>
+      <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="3" mincondition="0.0" maxcondition="0.0"/>
+    </Repairable>
+
+    <ItemContainer capacity="4" canbeselected="true" hideitems="true" slotsperrow="4" uilabel="Input" allowuioverlap="true"/>
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="Output" allowuioverlap="true"/>
+  </Item>
+
+  <Item
+      name=""
+      identifier="printer"
+      category="Machine"
+      linkable="true"
+    allowedlinks="deconstructor,cabinet"
+    scale="0.5">
+
+    <Sprite texture="Mods/BaroTech Expansion - Unstable/Machinery/Printer.png" sourcerect="0,0,251,248" depth="0.8"/>
+
+    <Fabricator canbeselected="true" powerconsumption="500.0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.3,0.6" maxsize="600,1000" style="ItemUI" anchor="Center"/>
+      <AlternativeLayout absoluteoffset="15,0"/>
+      <sound file="Mods/BaroTech Expansion - Unstable/Machinery/PrinterLoop.ogg" type="OnActive" range="1000.0" loop="true"/>
+      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
+    </Fabricator>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel"/>
+      <RequiredItem identifier="screwdriver" type="Equipped"/>
+      <input name="power_in" displayname="connection.powerin"/>
+    </ConnectionPanel>
+
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" ShowRepairUIThreshold="50" fixDurationHighSkill="10" fixDurationLowSkill="25" msg="ItemMsgRepairScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,216" anchor="Center" relativeoffset="0.1,0.27" style="ItemUI"/>
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem identifier="wrench" type="Equipped" />
+	    <ParticleEmitter particle="spark" particleamount="10" emitinterval="5" anglemax="360" velocitymin="5.0" velocitymax="250.0" scalemin="0.5" scalemax="1" mincondition="0.0" maxcondition="25.0"/>
+      <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="3" mincondition="0.0" maxcondition="0.0"/>
+    </Repairable>
+
+    <ItemContainer capacity="3" canbeselected="true" hideitems="true" slotsperrow="4" uilabel="Input" allowuioverlap="true"/>
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="Output" allowuioverlap="true"/>
+  </Item>
+</Items>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Conversations identifier="btechconversations" Language="English">
+
+<!-- Personality traits -->
+<PersonalityTrait name="Professional" alloweddialogtags="professional,none" commonness="1" />
+<PersonalityTrait name="Laid-back" alloweddialogtags="laid-back,none" commonness="1" />
+<PersonalityTrait name="Rude" alloweddialogtags="rude,none" commonness="1" />
+<PersonalityTrait name="Tough" alloweddialogtags="tough,none" commonness="1" />
+<PersonalityTrait name="Joker" alloweddialogtags="joker,none" commonness="1" />
+<PersonalityTrait name="Broken English" alloweddialogtags="brokenenglish" commonness="1" />
+<PersonalityTrait name="Fearful" alloweddialogtags="fearful,none" commonness="1" />
+<PersonalityTrait name="Crazy" alloweddialogtags="crazy,none" commonness="1" />
+
+<Conversation speaker="0" line="Ancient Evil Awakened!" speakertags="joker,crazy" flags="Initial">
+	<Conversation speaker="1" line="Modern evil awakened!" speakertags="crazy">
+		<Conversation speaker="0" line="" />
+		<Conversation speaker="2" line="Here we go... again!" allowedjobs="captain" speakertags="tough" />
+		<Conversation speaker="2" line="Shut. Up." allowedjobs="captain" speakertags="rude" />
+	</Conversation>
+	<Conversation speaker="1" line="You aren't most ancient guy in here." allowedjobs="captain" />
+	<Conversation speaker="1" line="Hello there, Evil! How was a nap?" speakertags="crazy">
+		<Conversation speaker="2" line="Better shut up unless you want to be not awake again!" allowedjobs="captain" speakertags="rude" />
+	</Conversation>
+	<Conversation speaker="1" line="I will check on his stuff, maybe he took some ethanol last night." allowedjobs="securityofficer" speakertags="professional">
+		<Conversation speaker="2" line="It doesn't look like ethylic drunkness. Better leave him alone, it will be over soon." allowedjobs="captain" />
+	</Conversation>
+	<Conversation speaker="1" line="Hey, you. You're finally awake. Even last storm didn't wake you up.">
+		<Conversation speaker="0" line="" />
+		<Conversation speaker="2" line="Storm? Here? We are underwater!" speakertags="professional" />
+	</Conversation>
+</Conversation>
+
+<Conversation speaker="0" line="I have remembered some story happened years ago." maxintensity="0.4">
+	<Conversation speaker="0" line="It's actually an incident entry, but, whatever.">
+		<Conversation speaker="0" line="So, one crew enters the ruins. After drilling through a wall they go inside...">
+			<Conversation speaker="1" line="And see a fish playing chess with fractal guardian?" speakertags="joker" />
+			<Conversation speaker="0" line="They swim through the corridors meeting various dangers...">
+				<Conversation speaker="0" line="They found a strange artifact, and just a seconds after its delivery on board, one of the crewmen went insane...">
+					<Conversation speaker="0" line="Whole ship catches flames, walls are torn apart after reactor meltdown...">
+						<Conversation speaker="0" line="...And then, crew was never seen again." >
+							<Conversation speaker="1" line="Thank you for new phobia!" speakertags="fearful,rude" />
+							<Conversation speaker="1" line="The story was slightly different." speakertags="professional">
+								<Conversation speaker="1" line="Crew survived and got saved by rescue team.">
+									<Conversation speaker="1" line="Survived, but with many members passed away." />
+								</Conversation>
+							</Conversation>
+							<Conversation speaker="1" line="Yeah, this report was confidential until recent days." />
+						</Conversation>
+					</Conversation>
+				</Conversation>
+			</Conversation>
+		</Conversation>
+	</Conversation>
+</Conversation>
+
+<Conversation speaker="0" line="Yawn...." flags="SleepyLow" />
+
+<Conversation speaker="0" line="I need some rest, I guess..." flags="SleepyMedium" />
+
+<Conversation speaker="0" line="My head is revolving.. I should take a nap." flags="SleepyMedium" />
+
+<Conversation speaker="0" line="Ight, I gotta take some rest, guys..." tags="brokenenglish" flags="SleepyMedium" />
+</Conversations>
+

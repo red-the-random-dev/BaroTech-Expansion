@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Items>
+	<Item name="" identifier="detonatorcrateloot" scale="0.5" linkable="true" pickdistance="150" tags="rechargeable,huskbomb" impactsoundtag="impact_metal_heavy" category="Equipment" hideninmenus="true" sonarsize="0.5">
+    	<Sprite texture="Mods/BaroTech Expansion - Unstable/Equipment/DetonatorCrate.png" depth="0.54" sourcerect="0,0,148,84" origin="0.5,0.5" />\
+    	
+	<Deconstruct time="45">
+		<Item identifier="holdchip" />
+		<Item identifier="c4block" />
+		<Item identifier="c4block" />
+		<Item identifier="c4block" />
+		<Item identifier="detonatorcrate" />
+	</Deconstruct>
+	
+    	<Body width="148" height="85" density="10" />
+    	<Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect">
+      		<StatusEffect type="OnBroken" target="This">
+      			<Explosion range="700.0" structuredamage="500" stun="5" force="20.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+          			<Affliction identifier="burn" strength="450" />
+          			<Affliction identifier="internaldamage" strength="150" />
+        		</Explosion>
+			<Remove />
+      		</StatusEffect>
+    	</Holdable>
+	<AiTarget soundrange="0" />
+	<Wearable limbtype="Torso" slots="OuterClothes, Bag" pickkey="Use">
+		<sprite texture="Mods/BaroTech Expansion - Unstable/Equipment/DetonatorCrateWearing.png" limb="Torso" inheritlimbdepth="true" hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.75,0.5" sourcerect="0,0,164,148" />
+		<StatusEffect type="Always" target="This" Condition="-25">
+        		<Conditional PhysicsBodyActive="eq true" />
+        		<sound file="Content/Items/WarningBeep.ogg" range="1000" loop="true" />
+      		</StatusEffect>
+		<StatusEffect type="Always" target="This" soundrange="40000" setvalue="true">
+        		<Conditional PhysicsBodyActive="eq true" />
+      		</StatusEffect>
+	</Wearable>
+    	<ItemContainer capacity="1" canbeselected="false" hideitems="true" drawinventory="true" showconditionincontainedstateindicator="true" />
+  	</Item>
+</Items>
