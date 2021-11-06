@@ -32,6 +32,8 @@
       <MoveSound file="Mods/BaroTech Expansion - Unstable/Weapons/ThermalDrill_TurretLoop.ogg" />
       <StartMoveSound file="Mods/BaroTech Expansion - Unstable/Weapons/ThermalDrill_TurretStart.ogg" />
       <EndMoveSound file="Mods/BaroTech Expansion - Unstable/Weapons/ThermalDrill_TurretStop.ogg" />
+      <ChargeSound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" range="10000" />
+      
       <RequiredSkill identifier="mechanical" level="50" />
       <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2048" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
         <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />

@@ -5,13 +5,9 @@
 	<Item file="Mods/BaroTech Expansion - Unstable/Overriding/OverridenMedicines.xml" />
 	<Item file="Mods/BaroTech Expansion - Unstable/Medical/Medicines.xml" />
 	<Item file="Mods/BaroTech Expansion - Unstable/Machinery/Machinery_All.xml" />
-	<Item file="Mods/BaroTech Expansion - Unstable/Machinery/UpgradedTools.xml" />
 	<Item file="Mods/BaroTech Expansion - Unstable/Papers/Blueprints.xml" />
 	<Item file="Mods/BaroTech Expansion - Unstable/Papers/MiscPapers.xml" />
 	<Item file="Mods/BaroTech Expansion - Unstable/Electronics/Security/SecurityElectronics.xml" />
-	<Item file="Mods/BaroTech Expansion - Unstable/Machinery/PortableOxygenGenerator.xml" />
-	<Item file="Mods/BaroTech Expansion - Unstable/Machinery/Regenerators.xml" />
-	<Item file="Mods/BaroTech Expansion - Unstable/Machinery/PowerSources.xml" />
 	<Item file="Mods/BaroTech Expansion - Unstable/Soundtracks/DefaultNotesheets.xml" />
 	<Item file="Mods/BaroTech Expansion - Unstable/Electronics/Electronics_All.xml" />
 	<Item file="Mods/BaroTech Expansion - Unstable/Equipment/EnhancedSuits.xml" />
@@ -45,7 +41,6 @@
 	<Character file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/Handyman.xml" />
 	<Character file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/Huntsman.xml" />
 	<Character file="Mods/BaroTech Expansion - Unstable/Creatures/Handyman/Handymanstruct.xml" />
-	<Character file="Mods/BaroTech Expansion - Unstable/Creatures/Humanstruct/Humanstruct.xml" />
 	<RandomEvents file="Mods/BaroTech Expansion - Unstable/randomevents.xml" />
 	<Sounds file="Mods/BaroTech Expansion - Unstable/Soundtracks/InGameSounds.xml" />
 	<Submarine file="Mods/BaroTech Expansion - Unstable/IronSailor.sub" />
